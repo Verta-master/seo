@@ -2,10 +2,10 @@ body {
   width: 100%;
   max-width: 100%;
   font-family: "Rubik", "Arial", sans-serif;
-  font-size: 24px;
-  line-height: 35px;
+  font-size: 18px;
+  line-height: 1.33;
   font-weight: 400;
-  color: #30333f;
+  color: @dark;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -16,35 +16,6 @@ body {
 }
 main {
   position: relative;
-  
-  &::before,
-  &::after {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
-  &::before {
-    width: 254px;
-    height: 933px;
-    left: 0;
-    top: -250px;
-    background-image: url(../img/images/ellipse-left.png);
-  }
-  &::after {
-    width: 256px;
-    height: 933px;
-    right: 0;
-    top: 925px;
-    background-image: url(../img/images/ellipse-right.png);
-  }
-}
-main.article::before {
-  display: none;
-}
-main.cab::after {
-  display: none;
 }
 img {
   max-width: 100%;
@@ -136,57 +107,4 @@ button {
 .privacy_policy .button {
   color: #F95454;
   cursor: pointer;
-}
-h1,
-h2,
-.title {
-  margin-top: 0;
-  margin-bottom: 70px;
-  font-size: 60px;
-  line-height: 90px;
-  font-weight: 500;
-}
-h3,
-.title-2 {
-  font-size: 24px;
-  line-height: 35px;
-  font-weight: 500;
-}
-.title-3 {
-  font-size: 40px;
-  line-height: 1.2;
-  font-weight: 500;
-}
-.title--double,
-.title--deco {
-  position: relative;
-  z-index: 5;
-  padding-top: 22px;
-   
-  &::before {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    width: 360px;
-    height: 147px;
-    top: 0;
-    left: -60px;
-    background-image: url(../img/images/title-shape.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
-}
-.title--double {
-  margin-bottom: 150px;
-  
-  &::before {
-    width: 402px;
-    height: 203px;
-    left: -140px;
-    background-image: url(../img/images/title-shape2.png);
-  }
-}
-.swiper-button-prev,
-.swiper-button-next {
-  outline: none;
 }

@@ -1,0 +1,118 @@
+.menu {
+  width: 360px;
+  max-width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 1000;
+  padding: 10px;
+  background-color: @light;
+}
+.logo {
+  display: block;
+  margin-bottom: 40px;
+  
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 260px;
+  }
+}
+.menu__wrap {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.menu__block {
+  height: 400px;
+  overflow-y: scroll;
+}
+.menu__internal,
+.menu__sublist,
+.menu__list {
+  .reset();
+  list-style: none;
+  line-height: 1.2;
+}
+.menu__list {
+  padding-right: 50px;
+}
+.menu__item {
+  margin-bottom: 15px;
+  
+  &:hover,
+  &:active,
+  &--active {
+    .menu__link {
+      color: @violet;
+      .transition;
+    }
+  }
+}
+.menu__link {
+  font-size: 16px;
+  font-weight: 500;
+  .transition;
+}
+.menu__btn {
+  position: absolute;
+  top: -2px;
+  left: 0;
+  width: 24px;
+  height: 24px;
+  
+  &::before {
+    content: "+";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 1;
+    font-size: 24px;
+    color: @violet;
+  }
+  &--open::before {
+    content: "\2014";
+  }
+}
+.menu__sublist {
+  padding-left: 10px;
+  margin-top: 10px;
+}
+.menu__subitem {
+  margin-bottom: 10px;
+  padding-left: 30px;
+  position: relative;
+  
+  &:hover,
+  &:active,
+  &--active {
+    .menu__sublink {
+      color: @violet;
+      .transition;
+    }
+  }
+}
+.menu__sublink {
+  font-size: 14px;
+  .transition;
+}
+.menu__internal {
+  display: none;
+  padding-left: 30px;
+  
+  li {
+    margin-top: 5px;
+    font-size: 14px;
+    .transition;
+    
+    &:hover,
+    &:active,
+    .item-active {
+      color: @violet;
+      .transition;
+    }
+  }
+}

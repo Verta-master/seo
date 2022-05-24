@@ -1,0 +1,47 @@
+.wrapper {
+  width: 1200px;
+  max-width: ~"calc(100% - 360px)";
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: 360px;
+  margin-right: auto;
+}
+.title {
+  margin-bottom: 50px;
+  margin-top: 10px;
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+.title-2 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-size: 24px;
+  font-weight: 500;
+}
+.subtitle {
+  position: relative;
+  margin: 0;
+  padding-left: 25px;
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: @violet;
+  line-height: 1.2;
+  letter-spacing: 0.075em;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -5px;
+    width: 25px;
+    height: 25px;
+    background-image: url(../img/icons/clip.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+section {
+  margin-bottom: 100px;
+}

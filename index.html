@@ -24,28 +24,31 @@
           <li class="menu__item">
             <a href="#" class="menu__link">Клиентам</a>
           </li>
-          <li class="menu__item">
+          <li class="menu__item menu__item--active">
             <a href="#" class="menu__link">Услуги</a>
             <ul class="menu__sublist">
               <li class="menu__subitem">
                 <a href="#" class="menu__sublink">Создание интернет-магазинов</a>
+                <button type="button" class="menu__btn"></button>
                 <ul class="menu__internal">
                   <li><a href="#">Создание интернет-магазина на Diafan CMS</a></li>
                   <li><a href="#">Создание интернет-магазина на OpenCart</a></li>
                   <li><a href="#">Создание интернет-магазина на WordPress</a></li>
                 </ul>
               </li>
-              <li class="menu__subitem">
+              <li class="menu__subitem menu__subitem--active">
                 <a href="#" class="menu__sublink">Аудиты</a>
+                <button type="button" class="menu__btn"></button>
                 <ul class="menu__internal">
                   <li><a href="#">Комплексный аудит</a></li>
-                  <li><a href="#">Анализ коммерческих факторов сайта</a></li>
+                  <li class="item-active"><a href="#">Анализ коммерческих факторов сайта</a></li>
                   <li><a href="#">Сравнительный анализ конкурентов</a></li>
                   <li><a href="#">SEO-аудит</a></li>
                 </ul>
               </li>
               <li class="menu__subitem">
                 <a href="#" class="menu__sublink">Контекстная реклама</a>
+                <button type="button" class="menu__btn"></button>
                 <ul class="menu__internal">
                   <li><a href="#">Настройка Яндекс Директ</a></li>
                   <li><a href="#">Настройка Google Adwords</a></li>
@@ -53,6 +56,7 @@
               </li>
               <li class="menu__subitem">
                 <a href="#" class="menu__sublink">Торговые компании</a>
+                <button type="button" class="menu__btn"></button>
                 <ul class="menu__internal">
                   <li><a href="#">Настройка Яндекс Маркета</a></li>
                   <li><a href="#">Настройка Google Merchant Center</a></li>
@@ -60,6 +64,7 @@
               </li>
               <li class="menu__subitem">
                 <a href="#" class="menu__sublink">Таргетированная реклама</a>
+                <button type="button" class="menu__btn"></button>
                 <ul class="menu__internal">
                   <li><a href="#">Настройка таргетированной рекламы Вконтакте</a></li>
                   <li><a href="#">Настройка таргетированной рекламы Instagram, Facebook</a></li>
@@ -67,6 +72,7 @@
               </li>
               <li class="menu__subitem">
                 <a href="#" class="menu__sublink">Социальные сети</a>
+                <button type="button" class="menu__btn"></button>
                 <ul class="menu__internal">
                   <li><a href="#">Оформление Instagram аккаунта</a></li>
                   <li><a href="#">Оформление группы Вконтакте</a></li>
@@ -74,6 +80,7 @@
               </li>
               <li class="menu__subitem">
                 <a href="#" class="menu__sublink">Дизайн</a>
+                <button type="button" class="menu__btn"></button>
                 <ul class="menu__internal">
                   <li><a href="#">Дизайн интернет-магазина</a></li>
                   <li><a href="#">Разработка баннеров для сайта</a></li>
@@ -104,11 +111,11 @@
       </div>
       
       <div class="contacts">
-        <a href="tel:+74993946804" class="contacts__link contacts__link--">+7 (499) 394-68-04</a>
-        <a href="mailto:info@seo-ecommerce.ru" class="contacts__link contacts__link--">info@seo-ecommerce.ru</a>
-        <div class="contacts__address">
+        <a href="tel:+74993946804" class="contacts__link contacts__link--phone"><span>+7 (499) 394-68-04</span></a>
+        <a href="mailto:info@seo-ecommerce.ru" class="contacts__link contacts__link--mail"><span>info@seo-ecommerce.ru</span></a>
+        <div class="contacts__link contacts__link--address">
           <a href="#" class="contacts__city"><span>Мoсква</span></a>
-          <address>Добролюбова&nbsp;21А, 2&nbsp;подъезд, -1&nbsp;этаж, офис&nbsp;6</address>
+          <address>Добролюбова&nbsp;21А, 2&nbsp;подъезд,<br>-1&nbsp;этаж, офис&nbsp;6</address>
         </div>
         <div class="contacts__link contacts__link--time">Пн.-Пт.: 9:00 - 18:00<br>Сб., Вс.: выходной</div>
       </div>
@@ -120,6 +127,8 @@
               <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
             </svg>
           </a>
+        </li>
+        <li class="social__item">
           <a href="#" class="social__link" title="Telegram">
             <svg width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <path d="m20.665 3.717-17.73 6.837c-1.21.486-1.203 1.161-.222 1.462l4.552 1.42 10.532-6.645c.498-.303.953-.14.579.192l-8.533 7.701h-.002l.002.001-.314 4.692c.46 0 .663-.211.921-.46l2.211-2.15 4.599 3.397c.848.467 1.457.227 1.668-.785l3.019-14.228c.309-1.239-.473-1.8-1.282-1.434z"/>
@@ -130,603 +139,603 @@
     </div>
   </nav>
   
-  <div class="page">
-    <main>
-      <section class="promo">
-        <div class="owl-carousel owl-theme promo__slider">
-          <div class="item promo__slide" style="background-image:url(img/images/bg-main.jpg);">
-            <div class="promo__wrap">
-              <p class="promo__title">Узнайте сколько стоит раскрутка интернет-магазина</p>
-              <div class="promo__subtitle">Оптимизировали и продвинули в ТОП более 50 интернет-магазинов</div>
-              <a href="#" class="btn promo__btn">Оставить заявку</a>
-            </div>
-          </div>
-          <div class="item promo__slide" style="background-image:url(img/images/slide-2.jpg);">
-            <div class="promo__wrap">
-              <p class="promo__title">Узнайте сколько стоит раскрутка интернет-магазина</p>
-              <div class="promo__subtitle">Оптимизировали и продвинули в ТОП более 50 интернет-магазинов</div>
-              <a href="#" class="btn promo__btn">Оставить заявку</a>
-            </div>
-          </div>
-          <div class="item promo__slide" style="background-image:url(img/images/slide-3.jpg);">
-            <div class="promo__wrap">
-              <p class="promo__title">Узнайте сколько стоит раскрутка интернет-магазина</p>
-              <div class="promo__subtitle">Оптимизировали и продвинули в ТОП более 50 интернет-магазинов</div>
-              <a href="#" class="btn promo__btn">Оставить заявку</a>
-            </div>
+  <main>
+    <section class="promo">
+      <div class="owl-carousel owl-theme promo__slider">
+        <div class="item promo__slide" style="background-image:url(img/images/bg-main.jpg);">
+          <div class="promo__wrap">
+            <p class="promo__title">Узнайте сколько стоит раскрутка интернет-магазина</p>
+            <div class="promo__subtitle">Оптимизировали и продвинули в ТОП более 50 интернет-магазинов</div>
+            <a href="#" class="btn promo__btn">Оставить заявку</a>
           </div>
         </div>
-      </section>
-      
-      <nav class="nav">
-        <div class="wrapper">
-          <ul class="nav__list">
-            <li class="nav__item nav__item--active">
-              <a href="#" class="nav__link">Цены</a>
-            </li>
-            <li class="nav__item">
-              <a href="#" class="nav__link">Результаты</a>
-            </li>
-            <li class="nav__item">
-              <a href="#" class="nav__link">Частые вопросы</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-      
-      <section class="reason">
-        <div class="wrapper">
-          <div class="reason__columns">
-            <div class="reason__column">
-              <p class="subtitle">Почему мы?</p>
-              <p class="title">Что Вы получаете от сотрудничества с нами</p>
-              <p>Краткое описание Краткое описание Краткое описание Краткое описание Краткое описание Краткое описание Краткое описание Краткое описание Краткое описание Краткое описание Краткое описание.</p>
-              <p>Краткое описание Краткое описание Краткое описание Краткое описание Краткое описание.</p>
-              <a href="#" class="more"><span>Подробнее</span></a>
-            </div>
-            <div class="reason__column">
-              <ul class="reason__list">
-                <li class="reason__item">
-                  <p class="title-2">Рост продаж</p>
-                  <p>Краткое описание Краткое описание Краткое описание</p>
-                </li>
-                <li class="reason__item">
-                  <p class="title-2">Уменьшение затрат на рекламу</p>
-                  <p>Краткое описание Краткое описание Краткое описание</p>
-                </li>
-                <li class="reason__item">
-                  <p class="title-2">Новые точки развития бизнеса</p>
-                  <p>Краткое описание Краткое описание Краткое описание</p>
-                </li>
-                <li class="reason__item">
-                  <p class="title-2">Рост лояльности к бренду</p>
-                  <p>Краткое описание Краткое описание Краткое описание</p>
-                </li>
-              </ul>
-            </div>
+        <div class="item promo__slide" style="background-image:url(img/images/slide-2.jpg);">
+          <div class="promo__wrap">
+            <p class="promo__title">Узнайте сколько стоит раскрутка интернет-магазина</p>
+            <div class="promo__subtitle">Оптимизировали и продвинули в ТОП более 50 интернет-магазинов</div>
+            <a href="#" class="btn promo__btn">Оставить заявку</a>
           </div>
         </div>
-      </section>
-      
-      <section class="brand">
-        <div class="wrapper">
-          <p class="subtitle">Клиенты</p>
-          <p class="title">С нами Вы будете в хорошей компании</p>
-          <div class="owl-carousel owl-theme brand__slider">
-            <div class="item brand__slide">
-              <img src="img/images/logo-1.png" alt="logo 1">
-            </div>
-            <div class="item brand__slide">
-              <img src="img/images/logo-2.png" alt="logo 2">
-            </div>
-            <div class="item brand__slide">
-              <img src="img/images/logo-3.png" alt="logo 3">
-            </div>
-            <div class="item brand__slide">
-              <img src="img/images/logo-4.png" alt="logo 4">
-            </div>
-            <div class="item brand__slide">
-              <img src="img/images/logo-5.png" alt="logo 5">
-            </div>
+        <div class="item promo__slide" style="background-image:url(img/images/slide-3.jpg);">
+          <div class="promo__wrap">
+            <p class="promo__title">Узнайте сколько стоит раскрутка интернет-магазина</p>
+            <div class="promo__subtitle">Оптимизировали и продвинули в ТОП более 50 интернет-магазинов</div>
+            <a href="#" class="btn promo__btn">Оставить заявку</a>
           </div>
         </div>
-      </section>
-      
-      <section class="promotion">
-        <div class="wrapper">
-          <p class="subtitle">Продвижение</p>
-          <p class="title">Большие возможности для продвижения Вашего сайта</p>
-          <ul class="promotion__list">
-            <li>Сайта визитки</li>
-            <li>Сайта услуг</li>
-            <li>Лендинга</li>
-            <li>Корпоративного сайта</li>
-            <li>Интернет-магазина</li>
-            <li>Портала</li>
-            <li>В топ 10</li>
-            <li>В Яндекс</li>
-            <li>В Google</li>
-            <li>Комплексное</li>
-            <li>По трафику</li>
-            <li>По позициям</li>
-            <li>По России</li>
-            <li>Молодого сайта</li>
-            <li>Разовая оптимизация</li>
-          </ul>
-          <ul class="promotion__logo">
-            <li><img src="img/images/wordpress.jpg" alt="WordPress"></li>
-            <li><img src="img/images/diafan.jpg" alt="Diafan"></li>
-            <li><img src="img/images/bitrix.jpg" alt="Bitrix"></li>
-            <li><img src="img/images/opencart.jpg" alt="OpenCart"></li>
-          </ul>
-          <a href="#" class="more"><span>Подробнее</span></a>
-        </div>
-      </section>
-      
-      <section class="work">
-        <div class="wrapper">
-          <p class="subtitle">Как мы работаем</p>
-          <p class="title">SEO покажет максимальный результат</p>
-          <ul class="work__list">
-            <li class="work__item">
-              <p class="work__title">Выходим за рамки классического SEO</p>
-              <p>Мы отходим от шаблонных решений, старое понятие SEO раскрутка сайтов это вчерашний день. К каждому проекту подходим с четким пониманием, знаем что принесет результат и какие действия нужно предпринять для продвижения именно Вашего сайта.</p>
-            </li>
-            <li class="work__item">
-              <p class="work__title">Решаем любые нестандартные задачи</p>
-              <p>Мы успешно продвигаем сайты уже более 10 лет и знаем, как вывести веб сайт в топ в любой тематике. Будьте уверены, ваш ресурс попадет в надежные руки профессионалов с успешными стратегиями поискового продвижения.</p>
-            </li>
-            <li class="work__item">
-              <p class="work__title">Повышаем трафик и показатели ROI</p>
-              <p>Мы проактивны, внедряем все новинки и успешные техники, даем советы и ищем новые источники получения трафика. Проводим встречи для обсуждения дальнейших планов и развития проекта.</p>
-            </li>
-            <li class="work__item">
-              <p class="work__title">Упор на автоматизацию и собственные технологии</p>
-              <p>Мы разработали свои внутренние инструменты для SEO-специалистов, которые помогают ускорить процессы качественного подбора семантики, оптимизации контента, контроля ссылочной массы. Это поможет получить ожидаемый результат быстро.</p>
-            </li>
-            <li class="work__item">
-              <p class="work__title">Не боимся масштабов и географии</p>
-              <p>Мы можем работать с любой площадкой: от небольшого корпоративного web-сайта до крупного сетевого магазина, с англоязычными проектами, выводить новые продукты на рынок, продвигать существующие продукты на новых рынках. Сотрудничаем с компаниями Киева, всей Украины и зарубежья.</p>
-            </li>
-            <li class="work__item">
-              <p class="work__title">Имеем доступ к лучшим SEO-сервисам на рынке</p>
-              <p>Для оптимизации вашего веб-ресурса специалисты Webpromo пользуются качественными, полнофункциональными инструментами. Это позволяет использовать возможности ресурсов, более детально анализировать рынок, конкурентов, регулярно мониторить показатели и быстро устранять ошибки.</p>
-            </li>
-          </ul>
-        </div>
-      </section>
-      
-      <section class="feedback">
-        <div class="wrapper">
-          <p class="subtitle">Обратная связь</p>
-          <p class="title">Начните качественное SEO продвижение с Seo-Ecommerce</p>
-          <p class="feedback__comment">Узнайте стоимость, сроки и перечень работы по вашему сайту</p>
-          <form action="#" class="form">
-            <input type="text" class="form__input" placeholder="Ваше имя">
-            <input type="text" class="form__input" placeholder="Ваш телефон">
-            <input type="text" class="form__input" placeholder="Ваш сайт">
-            <button type="submit" class="btn btn--light form__btn">Отправить заявку</button>
-          </form>
-        </div>
-      </section>
-      
-      <section class="details">
-        <div class="wrapper">
-          <p class="subtitle">Детали</p>
-          <p class="title">Этапы работы по SEO</p>
-          <ul class="details__list">
-            <li class="details__item">
-              <p class="title-2">Проведение комплексного аудита</p>
-              <ul>
-                <li>анализ спроса и конкурентной среды</li>
-                <li>анализ структуры ресурса для поиска упущенных возможностей привлечения целевого трафика</li>
-                <li>сбор семантического ядра</li>
-                <li>глубокий технический аудит</li>
-                <li>формирование заданий на исправление ошибок и оптимизацию под требования поисковых систем</li>
-                <li>анализ ссылочного профиля</li>
-                <li>настройка систем аналитики и определение целей</li>
-              </ul>
-            </li>
-            <li class="details__item">
-              <p class="title-2">Составление ТЗ на оптимизацию проекта</p>
-            </li>
-            <li class="details__item">
-              <p class="title-2">Проведение активной фазы продвижения</p>
-              <ul>
-                <li>Контроль технических реализаций согласно ранее подготовленному ТЗ</li>
-                <li>Регулярные работы:</li>
-                <li>работа с семантическим ядром (расширение, мониторинг позиций)</li>
-                <li>проработка контентной составляющей:</li>
-                <li>Анализ и планирование</li>
-                <li>Составление заданий копирайтерам</li>
-                <li>Регулярный мониторинг уникальности контента</li>
-                <li>Постоянный мониторинг технического состояния on-page-оптимизация</li>
-                <li>Составление планов по ссылочному профилю внешняя </li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-      </section>
-      
-      <section class="tariff">
-        <div class="wrapper">
-          <p class="subtitle">Расценки</p>
-          <p class="title">Тарифы и стоимость продвижения</p>
-          <ul class="tariff__list">
-            <li class="tariff__item">
-              <p class="tariff__title">Старт</p>
-              <p class="tariff__price">от <span>15 000 &#8381;</span></p>
-              <p class="tariff__title-2">Что входит:</p>
-              <ul>
-                <li>До 200 поисковых запросов</li>
-                <li>До 1 часа поддержки</li>
-                <li>Стандартный отчет</li>
-              </ul>
-              <p class="tariff__title-2">Кому подходит:</p>
-              <ul>
-                <li>Низкая конкуренция в тематике</li>
-                <li>Ассортимент 1-5 категорий товаров</li>
-                <li>Региональный сайт, качественное наполнение каталога</li>
-              </ul>
-              <a href="#" class="btn tariff__btn">
-                <span>Заказать</span>
-                <svg width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"><path d="M15 18l6-6-6-6"/> <path d="M3 12h17"/> <path stroke-linecap="round" d="M21 12h-1"/> </svg>
-              </a>
-            </li>
-            <li class="tariff__item">
-              <p class="tariff__title">Стандарт</p>
-              <p class="tariff__price">от <span>25 000 &#8381;</span></p>
-              <p class="tariff__title-2">Что входит:</p>
-              <ul>
-                <li>До 500 поисковых запросов</li>
-                <li>До 3 часов поддержки</li>
-                <li>Стандартный отчет</li>
-              </ul>
-              <p class="tariff__title-2">Кому подходит:</p>
-              <ul>
-                <li>Средняя конкуренция в тематике</li>
-                <li>Ассортимент 5-15 категорий товаров</li>
-                <li>Качественное наполнение каталога</li>
-              </ul>
-              <a href="#" class="btn tariff__btn">
-                <span>Заказать</span>
-                <svg width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"><path d="M15 18l6-6-6-6"/> <path d="M3 12h17"/> <path stroke-linecap="round" d="M21 12h-1"/> </svg>
-              </a>
-            </li>
-            <li class="tariff__item">
-              <p class="tariff__title">Оптимальный</p>
-              <p class="tariff__price">от <span>40 000 &#8381;</span></p>
-              <p class="tariff__title-2">Что входит:</p>
-              <ul>
-                <li>До 1000 поисковых запросов</li>
-                <li>До 5 часов поддержки</li>
-                <li>Стандартный отчет</li>
-              </ul>
-              <p class="tariff__title-2">Кому подходит:</p>
-              <ul>
-                <li>Средняя/высокая конкуренция в тематике</li>
-                <li>Ассортимент 15-25 категорий товаров</li>
-                <li>Структура, наполнение каталога требует доработок</li>
-              </ul>
-              <a href="#" class="btn tariff__btn">
-                <span>Заказать</span>
-                <svg width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"><path d="M15 18l6-6-6-6"/> <path d="M3 12h17"/> <path stroke-linecap="round" d="M21 12h-1"/> </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
-      
-      <section class="factor">
-        <div class="wrapper">
-          <p class="subtitle">Факторы</p>
-          <p class="title">Что влияет на стоимость SEO-продвижения?</p>
-          <div class="factor__wrap">
-            <ul class="list-arrow">
-              <li>Тип сайта и его объем: услуги, интернет-магазин / каталог товаров, информационный ресурс / СМИ</li>
-              <li>Конкурентность ниши</li>
-              <li>Регион продвижения</li>
-              <li>Объем семантического ядра (кол-во запросов)</li>
-              <li>Техническое состояние</li>
-              <li>Качество ссылочного профиля</li>
-              <li>История продвижения</li>
+      </div>
+    </section>
+
+    <nav class="nav">
+      <div class="wrapper">
+        <ul class="nav__list">
+          <li class="nav__item nav__item--active">
+            <a href="#" class="nav__link">Цены</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Результаты</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Частые вопросы</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <section class="reason">
+      <div class="wrapper">
+        <div class="reason__columns">
+          <div class="reason__column">
+            <p class="subtitle">Почему мы?</p>
+            <p class="title">Что Вы получаете от сотрудничества с нами</p>
+            <p>Краткое описание Краткое описание Краткое описание Краткое описание Краткое описание Краткое описание Краткое описание Краткое описание Краткое описание Краткое описание Краткое описание.</p>
+            <p>Краткое описание Краткое описание Краткое описание Краткое описание Краткое описание.</p>
+            <a href="#" class="more"><span>Подробнее</span></a>
+          </div>
+          <div class="reason__column">
+            <ul class="reason__list">
+              <li class="reason__item">
+                <p class="title-2">Рост продаж</p>
+                <p>Краткое описание Краткое описание Краткое описание</p>
+              </li>
+              <li class="reason__item">
+                <p class="title-2">Уменьшение затрат на рекламу</p>
+                <p>Краткое описание Краткое описание Краткое описание</p>
+              </li>
+              <li class="reason__item">
+                <p class="title-2">Новые точки развития бизнеса</p>
+                <p>Краткое описание Краткое описание Краткое описание</p>
+              </li>
+              <li class="reason__item">
+                <p class="title-2">Рост лояльности к бренду</p>
+                <p>Краткое описание Краткое описание Краткое описание</p>
+              </li>
             </ul>
           </div>
         </div>
-      </section>
-      
-      <section class="audit">
-        <div class="wrapper">
-          <p class="subtitle">Аудит</p>
-          <p class="title">Что сегодня мешает вашему сайту быть выше в поисковой выдаче?</p>
-          <div class="audit__wrap">
-            <p class="title-2">Закажите SEO-аудит от экспертов Seo-Ecommerce</p>
-            <p>И узнайте, как через 90 дней вы сможете продавать больше через ваш сайт!*</p>
-            <p class="audit__comment">*Все результаты индивидуальны и зависят от многих факторов</p>
-            <a href="#" class="btn audit__btn">Отправить заявку</a>
+      </div>
+    </section>
+
+    <section class="brand">
+      <div class="wrapper">
+        <p class="subtitle">Клиенты</p>
+        <p class="title">С нами Вы будете в хорошей компании</p>
+        <div class="owl-carousel owl-theme brand__slider">
+          <div class="item brand__slide">
+            <img src="img/images/logo-1.png" alt="logo 1">
+          </div>
+          <div class="item brand__slide">
+            <img src="img/images/logo-2.png" alt="logo 2">
+          </div>
+          <div class="item brand__slide">
+            <img src="img/images/logo-3.png" alt="logo 3">
+          </div>
+          <div class="item brand__slide">
+            <img src="img/images/logo-4.png" alt="logo 4">
+          </div>
+          <div class="item brand__slide">
+            <img src="img/images/logo-5.png" alt="logo 5">
           </div>
         </div>
-      </section>
-      
-      <div class="rate">
-        <div class="wrapper">
-          <div class="rate__columns list">
-            <div class="rate__column">
-              <img src="img/images/img-3.png" alt="скорость получения результата">
-            </div>
-            <div class="rate__column">
-              <p class="title-2">От чего зависит скорость получения результата?</p>
-              <ul>
-                <li>Полнота и скорость внедрения ТЗ и рекомендаций SEO-специалистов</li>
-                <li>География и конкуренция по запросам в тематике</li>
-                <li>Бюджет на контент и внешнюю оптимизацию (затратная часть на копирайтинг и проведение линкбилдинга)</li>
-              </ul>
-              <div class="rate__comment">
-                <p>* Рекомендации по улучшению ресурса и отдельных его страниц готовятся на протяжении всего периода сотрудничества.</p>
-                <p>Причиной этого являются постоянные изменения и усложнения поисковых алгоритмов и активность конкурентов</p>
-              </div>
+      </div>
+    </section>
+
+    <section class="promotion">
+      <div class="wrapper">
+        <p class="subtitle">Продвижение</p>
+        <p class="title">Большие возможности для продвижения Вашего сайта</p>
+        <ul class="promotion__list">
+          <li>Сайта визитки</li>
+          <li>Сайта услуг</li>
+          <li>Лендинга</li>
+          <li>Корпоративного сайта</li>
+          <li>Интернет-магазина</li>
+          <li>Портала</li>
+          <li>В топ 10</li>
+          <li>В Яндекс</li>
+          <li>В Google</li>
+          <li>Комплексное</li>
+          <li>По трафику</li>
+          <li>По позициям</li>
+          <li>По России</li>
+          <li>Молодого сайта</li>
+          <li>Разовая оптимизация</li>
+        </ul>
+        <ul class="promotion__logo">
+          <li><img src="img/images/wordpress.jpg" alt="WordPress"></li>
+          <li><img src="img/images/diafan.jpg" alt="Diafan"></li>
+          <li><img src="img/images/bitrix.jpg" alt="Bitrix"></li>
+          <li><img src="img/images/opencart.jpg" alt="OpenCart"></li>
+        </ul>
+        <a href="#" class="more"><span>Подробнее</span></a>
+      </div>
+    </section>
+
+    <section class="work">
+      <div class="wrapper">
+        <p class="subtitle">Как мы работаем</p>
+        <p class="title">SEO покажет максимальный результат</p>
+        <ul class="work__list">
+          <li class="work__item">
+            <p class="work__title">Выходим за рамки классического SEO</p>
+            <p>Мы отходим от шаблонных решений, старое понятие SEO раскрутка сайтов это вчерашний день. К каждому проекту подходим с четким пониманием, знаем что принесет результат и какие действия нужно предпринять для продвижения именно Вашего сайта.</p>
+          </li>
+          <li class="work__item">
+            <p class="work__title">Решаем любые нестандартные задачи</p>
+            <p>Мы успешно продвигаем сайты уже более 10 лет и знаем, как вывести веб сайт в топ в любой тематике. Будьте уверены, ваш ресурс попадет в надежные руки профессионалов с успешными стратегиями поискового продвижения.</p>
+          </li>
+          <li class="work__item">
+            <p class="work__title">Повышаем трафик и показатели ROI</p>
+            <p>Мы проактивны, внедряем все новинки и успешные техники, даем советы и ищем новые источники получения трафика. Проводим встречи для обсуждения дальнейших планов и развития проекта.</p>
+          </li>
+          <li class="work__item">
+            <p class="work__title">Упор на автоматизацию и собственные технологии</p>
+            <p>Мы разработали свои внутренние инструменты для SEO-специалистов, которые помогают ускорить процессы качественного подбора семантики, оптимизации контента, контроля ссылочной массы. Это поможет получить ожидаемый результат быстро.</p>
+          </li>
+          <li class="work__item">
+            <p class="work__title">Не боимся масштабов и географии</p>
+            <p>Мы можем работать с любой площадкой: от небольшого корпоративного web-сайта до крупного сетевого магазина, с англоязычными проектами, выводить новые продукты на рынок, продвигать существующие продукты на новых рынках. Сотрудничаем с компаниями Киева, всей Украины и зарубежья.</p>
+          </li>
+          <li class="work__item">
+            <p class="work__title">Имеем доступ к лучшим SEO-сервисам на рынке</p>
+            <p>Для оптимизации вашего веб-ресурса специалисты Webpromo пользуются качественными, полнофункциональными инструментами. Это позволяет использовать возможности ресурсов, более детально анализировать рынок, конкурентов, регулярно мониторить показатели и быстро устранять ошибки.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="feedback">
+      <div class="wrapper">
+        <p class="subtitle">Обратная связь</p>
+        <p class="title">Начните качественное SEO продвижение с Seo-Ecommerce</p>
+        <p class="feedback__comment">Узнайте стоимость, сроки и перечень работы по вашему сайту</p>
+        <form action="#" class="form">
+          <input type="text" class="form__input" placeholder="Ваше имя">
+          <input type="text" class="form__input" placeholder="Ваш телефон">
+          <input type="text" class="form__input" placeholder="Ваш сайт">
+          <button type="submit" class="btn btn--light form__btn">Отправить заявку</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="details">
+      <div class="wrapper">
+        <p class="subtitle">Детали</p>
+        <p class="title">Этапы работы по SEO</p>
+        <ul class="details__list">
+          <li class="details__item">
+            <p class="title-2">Проведение комплексного аудита</p>
+            <ul>
+              <li>анализ спроса и конкурентной среды</li>
+              <li>анализ структуры ресурса для поиска упущенных возможностей привлечения целевого трафика</li>
+              <li>сбор семантического ядра</li>
+              <li>глубокий технический аудит</li>
+              <li>формирование заданий на исправление ошибок и оптимизацию под требования поисковых систем</li>
+              <li>анализ ссылочного профиля</li>
+              <li>настройка систем аналитики и определение целей</li>
+            </ul>
+          </li>
+          <li class="details__item">
+            <p class="title-2">Составление ТЗ на оптимизацию проекта</p>
+          </li>
+          <li class="details__item">
+            <p class="title-2">Проведение активной фазы продвижения</p>
+            <ul>
+              <li>Контроль технических реализаций согласно ранее подготовленному ТЗ</li>
+              <li>Регулярные работы:</li>
+              <li>работа с семантическим ядром (расширение, мониторинг позиций)</li>
+              <li>проработка контентной составляющей:</li>
+              <li>Анализ и планирование</li>
+              <li>Составление заданий копирайтерам</li>
+              <li>Регулярный мониторинг уникальности контента</li>
+              <li>Постоянный мониторинг технического состояния on-page-оптимизация</li>
+              <li>Составление планов по ссылочному профилю внешняя </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="tariff">
+      <div class="wrapper">
+        <p class="subtitle">Расценки</p>
+        <p class="title">Тарифы и стоимость продвижения</p>
+        <ul class="tariff__list">
+          <li class="tariff__item">
+            <p class="tariff__title">Старт</p>
+            <p class="tariff__price">от <span>15 000 &#8381;</span></p>
+            <p class="tariff__title-2">Что входит:</p>
+            <ul>
+              <li>До 200 поисковых запросов</li>
+              <li>До 1 часа поддержки</li>
+              <li>Стандартный отчет</li>
+            </ul>
+            <p class="tariff__title-2">Кому подходит:</p>
+            <ul>
+              <li>Низкая конкуренция в тематике</li>
+              <li>Ассортимент 1-5 категорий товаров</li>
+              <li>Региональный сайт, качественное наполнение каталога</li>
+            </ul>
+            <a href="#" class="btn tariff__btn">
+              <span>Заказать</span>
+              <svg width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"><path d="M15 18l6-6-6-6"/> <path d="M3 12h17"/> <path stroke-linecap="round" d="M21 12h-1"/> </svg>
+            </a>
+          </li>
+          <li class="tariff__item">
+            <p class="tariff__title">Стандарт</p>
+            <p class="tariff__price">от <span>25 000 &#8381;</span></p>
+            <p class="tariff__title-2">Что входит:</p>
+            <ul>
+              <li>До 500 поисковых запросов</li>
+              <li>До 3 часов поддержки</li>
+              <li>Стандартный отчет</li>
+            </ul>
+            <p class="tariff__title-2">Кому подходит:</p>
+            <ul>
+              <li>Средняя конкуренция в тематике</li>
+              <li>Ассортимент 5-15 категорий товаров</li>
+              <li>Качественное наполнение каталога</li>
+            </ul>
+            <a href="#" class="btn tariff__btn">
+              <span>Заказать</span>
+              <svg width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"><path d="M15 18l6-6-6-6"/> <path d="M3 12h17"/> <path stroke-linecap="round" d="M21 12h-1"/> </svg>
+            </a>
+          </li>
+          <li class="tariff__item">
+            <p class="tariff__title">Оптимальный</p>
+            <p class="tariff__price">от <span>40 000 &#8381;</span></p>
+            <p class="tariff__title-2">Что входит:</p>
+            <ul>
+              <li>До 1000 поисковых запросов</li>
+              <li>До 5 часов поддержки</li>
+              <li>Стандартный отчет</li>
+            </ul>
+            <p class="tariff__title-2">Кому подходит:</p>
+            <ul>
+              <li>Средняя/высокая конкуренция в тематике</li>
+              <li>Ассортимент 15-25 категорий товаров</li>
+              <li>Структура, наполнение каталога требует доработок</li>
+            </ul>
+            <a href="#" class="btn tariff__btn">
+              <span>Заказать</span>
+              <svg width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"><path d="M15 18l6-6-6-6"/> <path d="M3 12h17"/> <path stroke-linecap="round" d="M21 12h-1"/> </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="factor">
+      <div class="wrapper">
+        <p class="subtitle">Факторы</p>
+        <p class="title">Что влияет на стоимость SEO-продвижения?</p>
+        <div class="factor__wrap">
+          <ul class="list-arrow">
+            <li>Тип сайта и его объем: услуги, интернет-магазин / каталог товаров, информационный ресурс / СМИ</li>
+            <li>Конкурентность ниши</li>
+            <li>Регион продвижения</li>
+            <li>Объем семантического ядра (кол-во запросов)</li>
+            <li>Техническое состояние</li>
+            <li>Качество ссылочного профиля</li>
+            <li>История продвижения</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="audit">
+      <div class="wrapper">
+        <p class="subtitle">Аудит</p>
+        <p class="title">Что сегодня мешает вашему сайту быть выше в поисковой выдаче?</p>
+        <div class="audit__wrap">
+          <p class="title-2">Закажите SEO-аудит от экспертов Seo-Ecommerce</p>
+          <p>И узнайте, как через 90 дней вы сможете продавать больше через ваш сайт!*</p>
+          <p class="audit__comment">*Все результаты индивидуальны и зависят от многих факторов</p>
+          <a href="#" class="btn audit__btn">Отправить заявку</a>
+        </div>
+      </div>
+    </section>
+
+    <div class="rate">
+      <div class="wrapper">
+        <div class="rate__columns list">
+          <div class="rate__column">
+            <img src="img/images/img-3.png" alt="скорость получения результата">
+          </div>
+          <div class="rate__column">
+            <p class="title-2">От чего зависит скорость получения результата?</p>
+            <ul>
+              <li>Полнота и скорость внедрения ТЗ и рекомендаций SEO-специалистов</li>
+              <li>География и конкуренция по запросам в тематике</li>
+              <li>Бюджет на контент и внешнюю оптимизацию (затратная часть на копирайтинг и проведение линкбилдинга)</li>
+            </ul>
+            <div class="rate__comment">
+              <p>* Рекомендации по улучшению ресурса и отдельных его страниц готовятся на протяжении всего периода сотрудничества.</p>
+              <p>Причиной этого являются постоянные изменения и усложнения поисковых алгоритмов и активность конкурентов</p>
             </div>
           </div>
         </div>
       </div>
-      
-      <section class="risk">
-        <div class="wrapper">
-          <p class="subtitle">Риски</p>
-          <p class="title">Вы можете доверять Seo-Ecommerce</p>
-          <ul class="risk__list">
-            <li class="risk__item">
-              <p class="title-2">Придерживаемся прозрачности в работе</p>
-              <p>Задачи, стратегия, бюджет — все это мы согласуем и утвердим до начала работы. В любой момент вы будете знать, какие работы ведутся над проектом. Вы регулярно будете получать <b>детальные отчеты</b> с указанием соотношения часов и работы (план/факт) и всегда узнаете, <b>за что заплатили и на что тратятся средства.</b></p>
+    </div>
+
+    <section class="risk">
+      <div class="wrapper">
+        <p class="subtitle">Риски</p>
+        <p class="title">Вы можете доверять Seo-Ecommerce</p>
+        <ul class="risk__list">
+          <li class="risk__item">
+            <p class="title-2">Придерживаемся прозрачности в работе</p>
+            <p>Задачи, стратегия, бюджет — все это мы согласуем и утвердим до начала работы. В любой момент вы будете знать, какие работы ведутся над проектом. Вы регулярно будете получать <b>детальные отчеты</b> с указанием соотношения часов и работы (план/факт) и всегда узнаете, <b>за что заплатили и на что тратятся средства.</b></p>
+          </li>
+          <li class="risk__item">
+            <p class="title-2">Используем трехуровневую экспертизу</p>
+            <p>Каждый проект прорабатывает <b>SEO-команда из трех человек:</b>- <b>SEO-Team-Lead</b> – выстраивает стратегию, контролирует ее внедрение;<br>- <b>SEO-специалист</b> – внедряет сложную часть стратегии под руководством тимлида;<br>- <b>помощник</b> – берет на себя легкую часть стратегии.<br>Такая система помогает достигать наилучшего контроля качества продвижения.</p>
+          </li>
+          <li class="risk__item">
+            <p class="title-2">Проводим внедрение изменений на сайте</p>
+            <p>Если у вас в штате нет специалистов, которые могут реализовать рекомендации из ТЗ (создание, размещение контента, дизайн, удобность и др.), <b>мы привлечем к работе смежных специалистов</b> (юзабилити, аналитики, программисты, редакторы).</p>
+          </li>
+          <li class="risk__item">
+            <p class="title-2">Не загоним под фильтр</p>
+            <p>Вашу площадку будут раскручивать <b>грамотно, осознанно и корректно,</b> при такой оптимизации вам не грозит попадание в «черный список» и под фильтр. Мы постоянно следим за изменениями поисковых алгоритмов и оперативно предоставляем актуальные и нужные рекомендации.<br>Вам не придется подвергать проект рискам.</p>
+          </li>
+        </ul>
+        <figure class="risk__img">
+          <img src="img/images/img-1.jpg" alt="Seo-Ecommerce">
+        </figure>
+      </div>
+    </section>
+
+    <section class="clients">
+      <div class="wrapper">
+        <p class="subtitle">Клиенты</p>
+        <p class="title">Клиенты годами остаются работать с нами</p>
+        <ul class="clients__list">
+          <li class="clients__item">
+            <figure class="clients__icon">
+              <img src="img/icons/132.svg" alt="Обещаем только реальные результаты">
+            </figure>
+            <div class="clients__text">
+              <p class="title-2">Обещаем только реальные результаты</p>
+              <p>Даем объективную оценку проекта, четко выполняем КРI. При составлении медиаплана мы подстраиваемся под сайт и возможности клиента.</p>
+            </div>
+          </li>
+          <li class="clients__item">
+            <figure class="clients__icon">
+              <img src="img/icons/103.svg" alt="Регулярно высылаем отчетность">
+            </figure>
+            <div class="clients__text">
+              <p class="title-2">Регулярно высылаем отчетность</p>
+              <p>Каждый месяц мы контролируем показатели по проекту, анализируем результаты, формируем план развития. Составляем полный отчет о проделанном.</p>
+            </div>
+          </li>
+          <li class="clients__item">
+            <figure class="clients__icon">
+              <img src="img/icons/205.svg" alt="Учитываем все детали">
+            </figure>
+            <div class="clients__text">
+              <p class="title-2">Учитываем все детали</p>
+              <p>Мы учитываем особенности админок проектов и даем рекомендации в зависимости от их типов.</p>
+            </div>
+          </li>
+          <li class="clients__item">
+            <figure class="clients__icon">
+              <img src="img/icons/129.svg" alt="Делаем все понятно и доступно">
+            </figure>
+            <div class="clients__text">
+              <p class="title-2">Делаем все понятно и доступно</p>
+              <p>Составляем понятное, структурированное ТЗ, которое можно сразу отдавать для реализации.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="service">
+      <div class="wrapper">
+        <p class="subtitle">Сервис</p>
+        <p class="title">Обеспечиваем высокий клиент-сервис</p>
+        <ul class="service__list">
+          <li><b>С нашими менеджерами работать комфортно,</b> они всегда на связи и оперативно реагируют на обращения.</li>
+          <li>Всегда владеем <b>актуальной, полной информацией по проекту</b> и даем экспертные рекомендации.</li>
+          <li><b>Соблюдаем регламенты и стремимся к результату.</b> Вы будете ощущать, что о вашем проекте заботятся.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="case">
+      <div class="wrapper">
+        <p class="subtitle">Кейсы</p>
+        <p class="title">Наши проекты</p>
+        <div class="owl-carousel owl-theme case__slider">
+          <div class="item case__slide">
+            <figure class="case__img">
+              <img src="img/images/img-4.jpg" alt="Кейсы">
+            </figure>
+            <div class="case__info list-arrow">
+              <p class="title-2">Название проекта</p>
+              <p>Краткое описание проекта Краткое описание проекта Краткое описание проекта</p>
+              <p class="title-2">Результаты</p>
+              <ul>
+                <li>+770% прирост трафика*</li>
+                <li>Среднее время прибывания на сайте + 180%*</li>
+                <li>22000 сеансов*</li>
+                <li>В 30 раз увеличилось количество ключевых фраз в поиске*</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="review">
+      <div class="wrapper">
+        <p class="subtitle">Отзывы</p>
+        <p class="title">Что о нас думают</p>
+        <div class="owl-carousel owl-theme review__slider">
+          <div class="item review__slide">
+            <div class="review__text">
+              <p>Текст отзыва Текст отзыва Текст отзыва Текст отзыва Текст отзыва Текст отзыва.</p>
+              <p>Текст отзыва Текст отзыва Текст отзыва Текст отзыва Текст отзыва Текст отзыва Текст отзыва.</p>
+            </div>
+            <div class="review__person">
+              <p class="review__name">Иван Иванов</p>
+              <p class="review__position">Коммерческий директор фирмы "Рога и Копыта"</p>
+            </div>
+          </div>
+          <div class="item review__slide">
+            <div class="review__text">
+              <p>Текст отзыва Текст отзыва Текст отзыва Текст отзыва Текст отзыва Текст отзыва.</p>
+              <p>Текст отзыва Текст отзыва Текст отзыва Текст отзыва Текст отзыва Текст отзыва Текст отзыва.</p>
+            </div>
+            <div class="review__person">
+              <p class="review__name">Иван Иванов</p>
+              <p class="review__position">Коммерческий директор фирмы "Рога и Копыта"</p>
+            </div>
+          </div>
+          <div class="item review__slide">
+            <div class="review__text">
+              <p>Текст отзыва Текст отзыва Текст отзыва Текст отзыва Текст отзыва Текст отзыва.</p>
+              <p>Текст отзыва Текст отзыва Текст отзыва Текст отзыва Текст отзыва Текст отзыва Текст отзыва.</p>
+            </div>
+            <div class="review__person">
+              <p class="review__name">Иван Иванов</p>
+              <p class="review__position">Коммерческий директор фирмы "Рога и Копыта"</p>
+            </div>
+          </div>
+          <div class="item review__slide">
+            <div class="review__text">
+              <p>Текст отзыва Текст отзыва Текст отзыва Текст отзыва Текст отзыва Текст отзыва.</p>
+              <p>Текст отзыва Текст отзыва Текст отзыва Текст отзыва Текст отзыва Текст отзыва Текст отзыва.</p>
+            </div>
+            <div class="review__person">
+              <p class="review__name">Иван Иванов</p>
+              <p class="review__position">Коммерческий директор фирмы "Рога и Копыта"</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="order">
+      <div class="wrapper">
+        <div class="order__column">
+          <div class="order__columns list-arrow">
+            <p class="title-2">Помимо seo продвижения мы поможем вам в следующих задачах</p>
+            <ul>
+              <li>SEO-продвижение</li>
+              <li>Повышение конверсии сайта (CRO)</li>
+              <li>Создание видеорекламы</li>
+              <li>Создание посадочных страниц</li>
+              <li>Веб-аналитика</li>
+            </ul>
+          </div>
+          <div class="order__columns">
+            <p class="title-2">Оставить заявку на SEO оптимизацию</p>
+            <form action="#" class="form">
+              <input type="text" class="form__input" placeholder="Ваше имя">
+              <input type="tel" class="form__input" placeholder="Ваш телефон">
+              <input type="email" class="form__input" placeholder="Ваш email">
+              <input type="text" class="form__input" placeholder="Ваш сайт">
+              <textarea class="form__message" placeholder="Комментарий"></textarea>
+              <button type="submit" class="btn order__btn">Отправить заявку</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="faq">
+      <div class="wrapper">
+        <p class="subtitle">faq</p>
+        <p class="title">Часто задаваемые вопросы</p>
+        <div class="faq__wrap">
+          <p>К задаче SEO оптимизации сайтов в интернете мы подходим комплексно и уверенно достигаем поставленных целей. Присутствие наших клиентов в топ-10 поисковиков — это результат работы SEO-команды с многолетним опытом.* Наши специалисты используют наиболее эффективные методы привлечения трафика из поисковых систем.</p>
+          <p class="faq__comment">*Все результаты индивидуальны и зависят от ряда факторов</p>
+          <ul class="faq__list">
+            <li class="faq__item">
+              <p class="faq__title">Как работает SEO оптимизация?</p>
+              <div class="faq__drop">
+                <p>SEO (англ. Search Engine Optimization) или поисковая оптимизация - это комплекс мер по оптимизации сайта для поднятия его позиций в результатах выдачи поисковых систем (Google и др.) по определенным запросам пользователей.</p>
+              </div>
             </li>
-            <li class="risk__item">
-              <p class="title-2">Используем трехуровневую экспертизу</p>
-              <p>Каждый проект прорабатывает <b>SEO-команда из трех человек:</b>- <b>SEO-Team-Lead</b> – выстраивает стратегию, контролирует ее внедрение;<br>- <b>SEO-специалист</b> – внедряет сложную часть стратегии под руководством тимлида;<br>- <b>помощник</b> – берет на себя легкую часть стратегии.<br>Такая система помогает достигать наилучшего контроля качества продвижения.</p>
+            <li class="faq__item">
+              <p class="faq__title">Для чего нужна SEO оптимизация?</p>
+              <div class="faq__drop">
+                <p></p>
+              </div>
             </li>
-            <li class="risk__item">
-              <p class="title-2">Проводим внедрение изменений на сайте</p>
-              <p>Если у вас в штате нет специалистов, которые могут реализовать рекомендации из ТЗ (создание, размещение контента, дизайн, удобность и др.), <b>мы привлечем к работе смежных специалистов</b> (юзабилити, аналитики, программисты, редакторы).</p>
+            <li class="faq__item">
+              <p class="faq__title">Какие возможности открывает SEO?</p>
+              <div class="faq__drop">
+                <p></p>
+              </div>
             </li>
-            <li class="risk__item">
-              <p class="title-2">Не загоним под фильтр</p>
-              <p>Вашу площадку будут раскручивать <b>грамотно, осознанно и корректно,</b> при такой оптимизации вам не грозит попадание в «черный список» и под фильтр. Мы постоянно следим за изменениями поисковых алгоритмов и оперативно предоставляем актуальные и нужные рекомендации.<br>Вам не придется подвергать проект рискам.</p>
+            <li class="faq__item">
+              <p class="faq__title">Сколько стоит SEO оптимизация сайта?</p>
+              <div class="faq__drop">
+                <p></p>
+              </div>
             </li>
           </ul>
-          <figure class="risk__img">
-            <img src="img/images/img-1.jpg" alt="Seo-Ecommerce">
+          <figure class="faq__img">
+            <img src="img/images/img-5.jpg" alt="Часто задаваемые вопросы">
           </figure>
         </div>
-      </section>
-      
-      <section class="clients">
-        <div class="wrapper">
-          <p class="subtitle">Клиенты</p>
-          <p class="title">Клиенты годами остаются работать с нами</p>
-          <ul class="clients__list">
-            <li class="clients__item">
-              <figure class="clients__icon">
-                <img src="img/icons/132.svg" alt="Обещаем только реальные результаты">
-              </figure>
-              <div class="clients__text">
-                <p class="title-2">Обещаем только реальные результаты</p>
-                <p>Даем объективную оценку проекта, четко выполняем КРI. При составлении медиаплана мы подстраиваемся под сайт и возможности клиента.</p>
-              </div>
-            </li>
-            <li class="clients__item">
-              <figure class="clients__icon">
-                <img src="img/icons/103.svg" alt="Регулярно высылаем отчетность">
-              </figure>
-              <div class="clients__text">
-                <p class="title-2">Регулярно высылаем отчетность</p>
-                <p>Каждый месяц мы контролируем показатели по проекту, анализируем результаты, формируем план развития. Составляем полный отчет о проделанном.</p>
-              </div>
-            </li>
-            <li class="clients__item">
-              <figure class="clients__icon">
-                <img src="img/icons/205.svg" alt="Учитываем все детали">
-              </figure>
-              <div class="clients__text">
-                <p class="title-2">Учитываем все детали</p>
-                <p>Мы учитываем особенности админок проектов и даем рекомендации в зависимости от их типов.</p>
-              </div>
-            </li>
-            <li class="clients__item">
-              <figure class="clients__icon">
-                <img src="img/icons/129.svg" alt="Делаем все понятно и доступно">
-              </figure>
-              <div class="clients__text">
-                <p class="title-2">Делаем все понятно и доступно</p>
-                <p>Составляем понятное, структурированное ТЗ, которое можно сразу отдавать для реализации.</p>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </section>
-      
-      <section class="service">
-        <div class="wrapper">
-          <p class="subtitle">Сервис</p>
-          <p class="title">Обеспечиваем высокий клиент-сервис</p>
-          <ul class="service__list">
-            <li><b>С нашими менеджерами работать комфортно,</b> они всегда на связи и оперативно реагируют на обращения.</li>
-            <li>Всегда владеем <b>актуальной, полной информацией по проекту</b> и даем экспертные рекомендации.</li>
-            <li><b>Соблюдаем регламенты и стремимся к результату.</b> Вы будете ощущать, что о вашем проекте заботятся.</li>
-          </ul>
-        </div>
-      </section>
-      
-      <section class="case">
-        <div class="wrapper">
-          <p class="subtitle">Кейсы</p>
-          <p class="title">Наши проекты</p>
-          <div class="owl-carousel owl-theme case__slider">
-            <div class="item case__slide">
-              <figure class="case__img">
-                <img src="img/images/img-4.jpg" alt="Кейсы">
-              </figure>
-              <div class="case__info list-arrow">
-                <p class="title-2">Название проекта</p>
-                <p>Краткое описание проекта Краткое описание проекта Краткое описание проекта</p>
-                <p class="title-2">Результаты</p>
-                <ul>
-                  <li>+770% прирост трафика*</li>
-                  <li>Среднее время прибывания на сайте + 180%*</li>
-                  <li>22000 сеансов*</li>
-                  <li>В 30 раз увеличилось количество ключевых фраз в поиске*</li>
-                </ul>
-              </div>
-            </div>
-            
-          </div>
-        </div>
-      </section>
-      
-      <section class="review">
-        <div class="wrapper">
-          <p class="subtitle">Отзывы</p>
-          <p class="title">Что о нас думают</p>
-          <div class="owl-carousel owl-theme review__slider">
-            <div class="item review__slide">
-              <div class="review__text">
-                <p>Текст отзыва Текст отзыва Текст отзыва Текст отзыва Текст отзыва Текст отзыва.</p>
-                <p>Текст отзыва Текст отзыва Текст отзыва Текст отзыва Текст отзыва Текст отзыва Текст отзыва.</p>
-              </div>
-              <div class="review__person">
-                <p class="review__name">Иван Иванов</p>
-                <p class="review__position">Коммерческий директор фирмы "Рога и Копыта"</p>
-              </div>
-            </div>
-            <div class="item review__slide">
-              <div class="review__text">
-                <p>Текст отзыва Текст отзыва Текст отзыва Текст отзыва Текст отзыва Текст отзыва.</p>
-                <p>Текст отзыва Текст отзыва Текст отзыва Текст отзыва Текст отзыва Текст отзыва Текст отзыва.</p>
-              </div>
-              <div class="review__person">
-                <p class="review__name">Иван Иванов</p>
-                <p class="review__position">Коммерческий директор фирмы "Рога и Копыта"</p>
-              </div>
-            </div>
-            <div class="item review__slide">
-              <div class="review__text">
-                <p>Текст отзыва Текст отзыва Текст отзыва Текст отзыва Текст отзыва Текст отзыва.</p>
-                <p>Текст отзыва Текст отзыва Текст отзыва Текст отзыва Текст отзыва Текст отзыва Текст отзыва.</p>
-              </div>
-              <div class="review__person">
-                <p class="review__name">Иван Иванов</p>
-                <p class="review__position">Коммерческий директор фирмы "Рога и Копыта"</p>
-              </div>
-            </div>
-            <div class="item review__slide">
-              <div class="review__text">
-                <p>Текст отзыва Текст отзыва Текст отзыва Текст отзыва Текст отзыва Текст отзыва.</p>
-                <p>Текст отзыва Текст отзыва Текст отзыва Текст отзыва Текст отзыва Текст отзыва Текст отзыва.</p>
-              </div>
-              <div class="review__person">
-                <p class="review__name">Иван Иванов</p>
-                <p class="review__position">Коммерческий директор фирмы "Рога и Копыта"</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      
-      <div class="order">
-        <div class="wrapper">
-          <div class="order__column">
-            <div class="order__columns list-arrow">
-              <p class="title-2">Помимо seo продвижения мы поможем вам в следующих задачах</p>
-              <ul>
-                <li>SEO-продвижение</li>
-                <li>Повышение конверсии сайта (CRO)</li>
-                <li>Создание видеорекламы</li>
-                <li>Создание посадочных страниц</li>
-                <li>Веб-аналитика</li>
-              </ul>
-            </div>
-            <div class="order__columns">
-              <p class="title-2">Оставить заявку на SEO оптимизацию</p>
-              <form action="#" class="form">
-                <input type="text" class="form__input" placeholder="Ваше имя">
-                <input type="tel" class="form__input" placeholder="Ваш телефон">
-                <input type="email" class="form__input" placeholder="Ваш email">
-                <input type="text" class="form__input" placeholder="Ваш сайт">
-                <textarea class="form__message" placeholder="Комментарий"></textarea>
-                <button type="submit" class="btn order__btn">Отправить заявку</button>
-              </form>
-            </div>
-          </div>
-        </div>
       </div>
-      
-      <section class="faq">
-        <div class="wrapper">
-          <p class="subtitle">faq</p>
-          <p class="title">Часто задаваемые вопросы</p>
-          <div class="faq__wrap">
-            <p>К задаче SEO оптимизации сайтов в интернете мы подходим комплексно и уверенно достигаем поставленных целей. Присутствие наших клиентов в топ-10 поисковиков — это результат работы SEO-команды с многолетним опытом.* Наши специалисты используют наиболее эффективные методы привлечения трафика из поисковых систем.</p>
-            <p class="faq__comment">*Все результаты индивидуальны и зависят от ряда факторов</p>
-            <ul class="faq__list">
-              <li class="faq__item">
-                <p class="faq__title">Как работает SEO оптимизация?</p>
-                <div class="faq__drop">
-                  <p>SEO (англ. Search Engine Optimization) или поисковая оптимизация - это комплекс мер по оптимизации сайта для поднятия его позиций в результатах выдачи поисковых систем (Google и др.) по определенным запросам пользователей.</p>
-                </div>
-              </li>
-              <li class="faq__item">
-                <p class="faq__title">Для чего нужна SEO оптимизация?</p>
-                <div class="faq__drop">
-                  <p></p>
-                </div>
-              </li>
-              <li class="faq__item">
-                <p class="faq__title">Какие возможности открывает SEO?</p>
-                <div class="faq__drop">
-                  <p></p>
-                </div>
-              </li>
-              <li class="faq__item">
-                <p class="faq__title">Сколько стоит SEO оптимизация сайта?</p>
-                <div class="faq__drop">
-                  <p></p>
-                </div>
-              </li>
-            </ul>
-            <figure class="faq__img">
-              <img src="img/images/img-5.jpg" alt="Часто задаваемые вопросы">
-            </figure>
-          </div>
-        </div>
-      </section>
-      
-      <section class="call">
-        <div class="wrapper">
-          <div class="call__wrap">
-            <div class="call__info">
-              <p class="call__title">Остались вопросы?</p>
-              <p>Наши эксперты готовы ответить на них<br>Свяжитесь по указанному телефону с нашим менеджером или воспользуйтесь услугой «Перезвонить мне». Мы свяжемся с вами в ближайшее время.</p>
-            </div>
-            <div class="call__action">
-              <a href="tel:+71234567890" class="call__phone">+7 123 456 78 90</a>
-              <a href="#" class="btn btn--light call__btn">Перезвоните мне</a>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-  
-    <footer class="footer">
+    </section>
+
+    <section class="call">
       <div class="wrapper">
-        <div class="footer__wrap">
-          <span>© 2022 SEO-Ecommerce. Раскрутка и продвижение сайтов</span>
-          <a href="#">Политика конфиденциальности</a>
+        <div class="call__wrap">
+          <div class="call__info">
+            <p class="call__title">Остались вопросы?</p>
+            <p>Наши эксперты готовы ответить на них<br>Свяжитесь по указанному телефону с нашим менеджером или воспользуйтесь услугой «Перезвонить мне». Мы свяжемся с вами в ближайшее время.</p>
+          </div>
+          <div class="call__action">
+            <a href="tel:+71234567890" class="call__phone">+7 123 456 78 90</a>
+            <a href="#" class="btn btn--light call__btn">Перезвоните мне</a>
+          </div>
         </div>
       </div>
-    </footer>
-  </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrapper">
+      <div class="footer__wrap">
+        <span>© 2022 SEO-Ecommerce. Раскрутка и продвижение сайтов</span>
+        <a href="#">Политика конфиденциальности</a>
+      </div>
+    </div>
+  </footer>
   
   <script src="js/jquery-3.2.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.js"></script>
   <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.nicescroll.min.js"></script>
+  <script src="js/script.js"></script>
   
   <!-- Sliders -->
   <script>
@@ -735,6 +744,7 @@
     nav: false,
     dots: true,
     navText:["",""],
+    items: 1
   });
     
   $('.brand__slider').owlCarousel({
