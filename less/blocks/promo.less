@@ -1,8 +1,31 @@
 .promo {
   margin-left: 360px;
+  margin-bottom: 0;
 }
 .promo__slider {
+  position: relative;
   
+  .owl-dots {
+    position: absolute;
+    bottom: 25px;
+    left: 0;
+    right: 0;
+    
+    .owl-dot span {
+      width: 15px;
+      height: 15px;
+      opacity: 1;
+      border: 1px solid #fff;
+      background-color: rgba(255,255,255,0);
+    }
+    .owl-dot.active span {
+      background-color: #fff;
+    }
+    .owl-dot:hover span,
+    .owl-dot:active span {
+      background-color: rgba(255,255,255,0);
+    }
+  }
 }
 .promo__slide {
   position: relative;
@@ -47,5 +70,5 @@
   max-width: 700px;
 }
 .promo__btn {
-  
+  width: 360px;
 }
