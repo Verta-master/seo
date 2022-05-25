@@ -1,0 +1,40 @@
+.audit {
+  position: relative;
+  padding-top: 70px;
+  padding-bottom: 90px;
+  background-color: @light;
+  overflow: hidden;
+  
+  .title {
+    margin-bottom: 40px;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    bottom: 0;
+    left: 61%;
+    width: 750px;
+    height: 670px;
+    background-image: url(../img/images/bg-4.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+.audit__wrap {
+  position: relative;
+  z-index: 5;
+  max-width: 900px;
+  padding-left: 70px;
+  font-size: 24px;
+}
+.audit__comment {
+  font-size: 18px;
+}
+.audit__btn {
+  margin-top: 40px;
+}
+.audit__text {
+  max-width: 650px;
+}
