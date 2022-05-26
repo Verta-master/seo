@@ -1,8 +1,33 @@
-.case {
-  
+.case__wrap {
+  position: relative;
+}
+.case__number {
+  position: absolute;
+  bottom: 5px;
+  left: 66%;
+  right: 0;
+  z-index: 0;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 40px;
+  color: @violet;
 }
 .case__slider {
+  position: relative;
   
+  .owl-nav {
+    position: absolute;
+    bottom: 0;
+    left: 66%;
+    right: 0;
+    z-index: 100;
+    margin-top: 0;
+  }
+  .owl-nav [class*=owl-] {
+    margin-left: 30px !important;
+    margin-right: 30px !important;
+  }
 }
 .case__slide {
   display: flex;
@@ -26,6 +51,7 @@
 }
 .case__info {
   width: 33%;
+  padding-bottom: 50px;
   
   .title-2 {
     margin-top: 0;
