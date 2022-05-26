@@ -752,19 +752,19 @@
             <li class="faq__item">
               <p class="faq__title">Для чего нужна SEO оптимизация?</p>
               <div class="faq__drop">
-                <p></p>
+                <p>SEO (англ. Search Engine Optimization) или поисковая оптимизация - это комплекс мер по оптимизации сайта для поднятия его позиций в результатах выдачи поисковых систем (Google и др.) по определенным запросам пользователей.</p>
               </div>
             </li>
             <li class="faq__item">
               <p class="faq__title">Какие возможности открывает SEO?</p>
               <div class="faq__drop">
-                <p></p>
+                <p>SEO (англ. Search Engine Optimization) или поисковая оптимизация - это комплекс мер по оптимизации сайта для поднятия его позиций в результатах выдачи поисковых систем (Google и др.) по определенным запросам пользователей.</p>
               </div>
             </li>
             <li class="faq__item">
               <p class="faq__title">Сколько стоит SEO оптимизация сайта?</p>
               <div class="faq__drop">
-                <p></p>
+                <p>SEO (англ. Search Engine Optimization) или поисковая оптимизация - это комплекс мер по оптимизации сайта для поднятия его позиций в результатах выдачи поисковых систем (Google и др.) по определенным запросам пользователей.</p>
               </div>
             </li>
           </ul>
@@ -856,6 +856,14 @@
       nav: true,
       dots: false,
       navText:["",""],
+    })
+  </script>
+  
+  <!--  Faq-->
+  <script>
+    $('.faq__title').click(function() {
+      $(this).toggleClass('faq__title--drop');
+      $(this).next().slideToggle();
     })
   </script>
 </body>
