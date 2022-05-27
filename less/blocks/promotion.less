@@ -6,6 +6,9 @@
   .subtitle {
     max-width: 775px;
   }
+  .title {
+    margin-bottom: 50px;
+  }
 }
 .promotion__list,
 .promotion__logo {
@@ -16,25 +19,27 @@
 .promotion__logo {
   justify-content: space-around;
   align-items: center;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 .promotion__list {
   flex-direction: column;
   flex-wrap: wrap;
   height: 260px;
+  margin-bottom: 20px;
   
   li {
     position: relative;
     padding-left: 40px;
-    margin-bottom: 20px;
+    margin-bottom: 18px;
+    font-size: 24px;
     
     &::before {
       content: "";
       position: absolute;
       top: -3px;
       left: 0;
-      width: 24px;
-      height: 24px;
+      width: 30px;
+      height: 30px;
       background-image: url(../img/icons/tick.svg);
       background-repeat: no-repeat;
       background-size: contain;

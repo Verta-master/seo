@@ -1,5 +1,9 @@
 .faq {
   overflow: hidden;
+  
+  .title {
+    margin-bottom: 30px;
+  }
 }
 .faq__wrap {
   position: relative;
@@ -10,8 +14,8 @@
 }
 .faq__img {
   position: absolute;
-  left: 105%;
-  top: -80px;
+  left: 102%;
+  top: -160px;
   width: 660px;
   max-width: 100%;
 }
@@ -44,6 +48,7 @@
     right: 0;
     width: 70px;
     height: 70px;
+    font-weight: 500;
     text-align: center;
     line-height: 70px;
     color: inherit;
@@ -63,11 +68,16 @@
 }
 .faq__drop {
   display: none;
-  padding: 0 30px;
-  padding-bottom: 10px;
+  padding: 5px 30px;
+  padding-bottom: 15px;
   padding-right: 120px;
   font-size: 18px;
+  
+  p {
+    margin-top: 0;
+  }
 }
 .faq__comment {
   font-size: 18px;
+  margin-top: 32px;
 }

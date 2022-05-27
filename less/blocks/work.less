@@ -1,3 +1,8 @@
+.work {
+  .title {
+    margin-bottom: 54px;
+  }
+}
 .work__list {
   .reset();
   list-style: none;
@@ -7,18 +12,25 @@
 }
 .work__item {
   width: 32.5%;
-  padding: 25px;
+  padding: 30px 25px;
+  padding-bottom: 35px;
   margin-bottom: 30px;
   border-top: 4px solid @violet;
   background-color: rgb(255, 255, 255);
   box-shadow: 0px 8px 27px 0px rgba(0, 0, 0, 0.05);
   border-radius: 0 0 10px 10px;
+  
+  p {
+    margin: 0;
+  }
+  .work__title {
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
 }
 .work__title {
   position: relative;
   padding-left: 70px;
-  margin-top: 0;
-  margin-bottom: 20px;
   font-size: 20px;
   font-weight: 500;
   line-height: 1.2;

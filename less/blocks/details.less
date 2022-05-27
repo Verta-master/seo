@@ -1,3 +1,8 @@
+.details {
+  .title {
+    margin-bottom: 20px;
+  }
+}
 .details__list,
 .details__list ul {
   .reset();
@@ -8,13 +13,13 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  height: 500px;
+  height: 520px;
   
   &::after {
     content: "";
     position: absolute;
-    bottom: 0;
-    right: 0;
+    bottom: -20px;
+    right: -20px;
     width: 235px;
     height: 235px;
     z-index: -1;
@@ -31,7 +36,7 @@
   &::before {
     position: absolute;
     top: -10px;
-    right: 40px;
+    right: 60px;
     z-index: -1;
     font-size: 200px;
     font-weight: 700;
@@ -48,13 +53,14 @@
     
     &::before {
       content: "2";
-      top: -70px;
+      top: -90px;
       right: 20px;
     }
   }
   &:nth-child(3) {
     &::before {
       content: "3";
+      right: 20px;
     }
   }
 }
@@ -62,7 +68,7 @@
   li {
     position: relative;
     padding-left: 30px;
-    margin-bottom: 5px;
+    margin-bottom: 15px;
     
     &::before {
       content: "\2014";

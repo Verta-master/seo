@@ -1,6 +1,7 @@
 .review {
   position: relative;
   padding-top: 90px;
+  margin-bottom: 50px;
   overflow: hidden;
   
   &::before {
@@ -13,6 +14,15 @@
     bottom: 120px;
     background-color: @light;
   }
+  .title {
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  .subtitle {
+    width: 130px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 .review__slider {
   margin-left: 460px;
@@ -21,19 +31,22 @@
   .owl-nav button.owl-prev {
     position: absolute;
     left: -80px;
+    width: 50px !important;
+    height: 50px !important;
+    background-size: 40px 40px !important;
   }
   .owl-nav button.owl-prev {
-    top: 40%;
+    top: 31%;
   }
   .owl-nav button.owl-next {
-    top: 48%;
+    top: 39%;
   }
 }
 .review__slide {
   width: 380px;
-  padding: 35px;
-  padding-top: 120px;
-  margin-bottom: 30px;
+  padding: 35px 40px;
+  padding-top: 100px;
+  margin-bottom: 40px;
   text-align: center;
   border-radius: 10px;
   background-color: rgb(255, 255, 255);
@@ -45,6 +58,7 @@
 }
 .review__text {
   font-style: italic;
+  padding-bottom: 10px;
 }
 .review__person {
   padding-top: 25px;
