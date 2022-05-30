@@ -595,6 +595,9 @@ section {
   -webkit-box-shadow: 0px 8px 27px 0px rgba(0, 0, 0, 0.05);
           box-shadow: 0px 8px 27px 0px rgba(0, 0, 0, 0.05);
 }
+.menu-btn {
+  display: none;
+}
 .logo {
   display: block;
   margin-bottom: 18px;
@@ -1384,6 +1387,44 @@ section {
   margin-right: auto;
   margin-top: 35px;
   font-size: 18px;
+}
+.form__checkbox {
+  display: none;
+}
+.form__label {
+  display: block;
+  position: relative;
+  margin-bottom: 20px;
+  padding-left: 30px;
+  cursor: pointer;
+}
+.form__label::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  font-size: 20px;
+  line-height: 20px;
+  color: #7a029f;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+.form__checkbox:checked + .form__label::before {
+  content: "\2713";
+}
+.form__comment {
+  font-size: 14px;
+  text-align: center;
+}
+.form__comment a {
+  text-decoration: underline;
+}
+.form__comment a:hover,
+.form__comment a:active {
+  text-decoration: none;
 }
 .feedback {
   padding-top: 95px;
@@ -2326,6 +2367,114 @@ section {
   width: 40%;
   text-align: center;
 }
+.modal {
+  width: 400px;
+  padding: 20px;
+  max-width: 100%;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px 26px 32px 0px rgba(46, 46, 46, 0.25);
+          box-shadow: 0px 26px 32px 0px rgba(46, 46, 46, 0.25);
+  border-radius: 15px;
+}
+.modal--city {
+  width: 900px;
+}
+.modal__title {
+  font-size: 24px;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+.modal__btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.modal__btns .modal__btn {
+  width: 48%;
+  height: 60px;
+}
+.city__title {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: 400;
+  color: #7a029f;
+}
+.city__title span {
+  border-bottom: 1px dashed #7a029f;
+}
+.city__search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 30px;
+}
+.city__search .title-2 {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: 30px;
+  font-size: 18px;
+}
+.city__search .search__input {
+  font-size: 18px;
+}
+.city__search .search {
+  margin-bottom: 0;
+}
+.city__popular {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 15px;
+}
+.city__option {
+  display: block;
+  margin-right: 30px;
+  font-size: 14px;
+}
+.city__option:hover {
+  color: #7a029f;
+}
+.city__option--active {
+  pointer-events: none;
+  border-bottom: 1px dashed #2c0031;
+}
+.city__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-height: 600px;
+}
+.city__item {
+  margin-bottom: 5px;
+}
+.city__item a:hover,
+.city__item a:active {
+  color: #7a029f;
+}
 @media (max-width: 1800px) {
   .clients__wrap::after {
     left: 110%;
@@ -2516,8 +2665,36 @@ section {
     padding-right: 15px;
     max-width: 100%;
   }
+  .menu-btn {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 15px;
+    z-index: 1000;
+    width: 50px;
+    height: 50px;
+    background-image: url(../img/icons/menu.svg);
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+    background-position: center;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 0 0 10px 10px;
+  }
+  .menu-btn--close {
+    background-image: url(../img/icons/cross.svg);
+    background-size: 25px 25px;
+  }
   .menu {
-    display: none;
+    opacity: 0;
+    left: -360px;
+    -webkit-transition: ease-out 0.3s;
+    transition: ease-out 0.3s;
+  }
+  .menu--open {
+    opacity: 1;
+    left: 0;
+    -webkit-transition: ease-out 0.3s;
+    transition: ease-out 0.3s;
   }
   .feedback .wrapper::before {
     display: none;
@@ -2697,7 +2874,7 @@ section {
     padding-left: 0;
   }
 }
-@media (max-width: 700px) {
+@media (max-width: 766px) {
   .promo__wrap {
     margin-left: 0;
     padding-left: 15px;
@@ -2804,6 +2981,20 @@ section {
   }
   .risk__item:first-child .title-2 {
     margin-right: 0;
+  }
+  .menu-btn {
+    top: 0;
+    right: 10px;
+  }
+  .city__list {
+    max-height: none;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .city__item {
+    width: 33%;
   }
 }
 @media (max-width: 480px) {
@@ -2942,5 +3133,94 @@ section {
   }
   .call__phone {
     font-size: 32px;
+  }
+  .menu-btn {
+    width: 70px;
+    height: 50px;
+    top: 0;
+    left: calc(50% + 105px);
+    right: auto;
+    background-color: #f6fafe;
+    border-radius: 0 0 10px 10px;
+    -webkit-box-shadow: 0 8px 27px 0 rgba(0, 0, 0, 0.05);
+            box-shadow: 0 8px 27px 0 rgba(0, 0, 0, 0.05);
+  }
+  .menu {
+    max-width: calc(100% - 80px);
+  }
+  .menu__sublink,
+  .contacts__link {
+    font-size: 12px;
+  }
+  .menu__link,
+  .contacts__link--mail,
+  .contacts__link--phone {
+    font-size: 14px;
+  }
+  .menu__block,
+  .search {
+    margin-bottom: 15px;
+  }
+  .menu__subitem,
+  .menu__item {
+    margin-bottom: 5px;
+  }
+  .menu__internal li,
+  .menu__sublist {
+    margin-top: 5px;
+  }
+  .menu__btn {
+    top: 0;
+  }
+  .menu__sublist {
+    padding-left: 5px;
+  }
+  .menu__internal {
+    padding-right: 0;
+    padding-left: 10px;
+  }
+  .menu__internal li a {
+    font-size: 12px;
+  }
+  .city__title {
+    font-size: 20px;
+  }
+  .city__search {
+    display: block;
+  }
+  .city__search .title-2 {
+    margin-right: 0;
+  }
+  .city__option {
+    font-weight: 500;
+    margin-bottom: 5px;
+  }
+  .city__item {
+    width: 50%;
+  }
+}
+@media (max-width: 358px) {
+  .nav__list {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .menu-btn {
+    right: 5px;
+    left: auto;
+  }
+  .contacts__link {
+    font-size: 10px;
+  }
+  .contacts__link--mail,
+  .contacts__link--phone {
+    font-size: 12px;
+  }
+  .modal__btns .modal__btn {
+    height: 50px;
+    font-size: 14px;
+  }
+  .modal__title {
+    font-size: 20px;
   }
 }
