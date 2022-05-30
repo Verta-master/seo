@@ -2000,8 +2000,8 @@ section {
 .case__number {
   position: absolute;
   bottom: 5px;
-  left: 66%;
-  right: 0;
+  left: 0;
+  right: 41%;
   z-index: 0;
   text-align: center;
   font-size: 24px;
@@ -2015,8 +2015,8 @@ section {
 .case__slider .owl-nav {
   position: absolute;
   bottom: 0;
-  left: 66%;
-  right: 0;
+  left: 0;
+  right: 41%;
   z-index: 100;
   margin-top: 0;
 }
@@ -2033,17 +2033,17 @@ section {
           justify-content: space-between;
 }
 .case__img {
-  width: 66%;
-  height: 440px;
+  width: 59%;
+  padding-bottom: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   border-radius: 10px;
   overflow: hidden;
 }
@@ -2056,9 +2056,7 @@ section {
   height: auto;
 }
 .case__info {
-  width: 32%;
-  padding-bottom: 50px;
-  font-size: 24px;
+  width: 40%;
 }
 .case__info p,
 .case__info .title-2 {
@@ -2067,6 +2065,7 @@ section {
 .case__info ul {
   font-size: 18px;
   line-height: 24px;
+  margin-bottom: 20px;
 }
 .case__info ul li {
   margin-bottom: 10px;
@@ -2846,7 +2845,13 @@ section {
   }
   .case__number,
   .case__slider .owl-nav {
-    left: 0;
+    right: 0;
+  }
+  .case__info {
+    padding-bottom: 50px;
+  }
+  .case__img {
+    padding-bottom: 0;
   }
   .order__column {
     width: 100%;
