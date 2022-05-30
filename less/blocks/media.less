@@ -371,3 +371,250 @@
     padding-left: 0;
   }
 }
+@media (max-width: 700px) {
+  .promo__wrap {
+    margin-left: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .promo__title {
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
+  .promo__subtitle {
+    font-size: 22px;
+    margin-bottom: 70px;
+  }
+  .nav__link {
+    width: auto;
+    min-width: auto;
+    padding: 15px 30px;
+    height: auto;
+    font-size: 16px;
+  }
+  .nav__link--active,
+  .nav__link:active,
+  .nav__link:hover {
+    height: auto;
+    font-size: 16px;
+  }
+  .title {
+    font-size: 32px;
+  }
+  .subtitle {
+    font-size: 14px;
+    padding-left: 18px;
+    
+    &::before {
+      width: 18px;
+      height: 18px;
+    }
+  }
+  .promotion__list {
+    display: block;
+    height: auto;
+    margin-bottom: 30px;
+  }
+  .promotion__logo {
+    flex-wrap: wrap;
+    
+    li {
+      width: 45%;
+      text-align: center;
+    }
+  }
+  .service__list li,
+  .work__item {
+    width: 100%;
+  }
+  .feedback .subtitle {
+    width: 170px;
+  }
+  .tariff__item {
+    width: 320px;
+    max-width: 100%;
+  }
+  .service__list,
+  .clients__item {
+    display: block;
+  }
+  .clients__icon {
+    width: 60px;
+    height: 60px;
+    float: left;
+    margin: 20px;
+    
+    img {
+      width: 40px;
+    }
+  }
+  .clients__text {
+    width: 100%;
+    height: auto;
+    min-height: 80px;
+    padding: 20px;
+    font-size: 16px;
+  }
+  .clients__text .title-2 {
+    font-size: 20px;
+  }
+  .service__list li {
+    margin-bottom: 20px;
+    padding: 20px;
+    padding-left: 65px;
+  }
+  .case__img {
+    height: auto;
+  }
+  .review .subtitle {
+    width: 100px;
+  }
+  .faq__title {
+    padding-left: 20px;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+  .faq__drop {
+    padding-right: 30px;
+    padding-left: 20px;
+  }
+  .risk__item:first-child .title-2 {
+    margin-right: 0;
+  }
+}
+@media (max-width: 480px) {
+  .promo__slide {
+    min-height: 100vh;
+  }
+  .promo__title {
+    font-size: 30px;
+  }
+  .promo__subtitle {
+    font-size: 20px;
+  }
+  .reason__item,
+  .promo__btn {
+    width: 100%;
+  }
+  .nav__link {
+    padding: 0;
+    width: 70px;
+    height: 50px !important;
+    font-size: 0 !important;
+  }
+  .nav__item {
+    .nav__link {
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 30px 30px;
+    }
+    
+    &:first-child .nav__link {
+      background-image: url(../img/icons/ruble-dark.svg);
+      
+      &:hover,
+      &:active,
+      &--active {
+        background-image: url(../img/icons/ruble.svg);
+      }
+    }
+    &:nth-child(2) .nav__link {
+      background-image: url(../img/icons/growth-dark.svg);
+      
+      &:hover,
+      &:active,
+      &--active {
+        background-image: url(../img/icons/growth.svg);
+      }
+    }
+    &:nth-child(3) .nav__link {
+      background-image: url(../img/icons/question-dark.svg);
+      
+      &:hover,
+      &:active,
+      &--active {
+        background-image: url(../img/icons/question.svg);
+      }
+    }
+  }
+  .nav__list {
+    justify-content: center;
+  }
+  .title {
+    font-size: 30px;
+  }
+  .reason__list {
+    padding-top: 0;
+  }
+  .reason__item:nth-child(2n) {
+    top: 0;
+  }
+  .reason__item {
+    height: auto;
+    
+    &:first-child {
+      order: 1;
+    }
+    &:nth-child(2) {
+      order: 2;
+    }
+    &:nth-child(3) {
+      order: 4;
+    }
+    &:nth-child(4) {
+      order: 3;
+    }
+  }
+  .details__item::before {
+    right: 0 !important;
+    font-size: 150px;
+  }
+  .details__item:nth-child(2)::before {
+    top: -30px;
+  }
+  .details__list::after {
+    bottom: 0;
+    right: 0;
+    width: 150px;
+    height: 150px;
+  }
+  .list-arrow ul {
+    font-size: 18px;
+    
+    li::before {
+      top: -5px;
+      left: 3px;
+    }
+  }
+  .risk__item {
+    padding: 30px !important;
+  }
+  .review__slider {
+    margin-left: 15px;
+  }
+  .review__slide {
+    width: 260px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+  }
+  .review__slider .owl-nav button.owl-next,
+  .review__slider .owl-nav button.owl-prev {
+    position: static;
+  }
+  .review::before {
+    bottom: 170px;
+  }
+  .review__name {
+    font-size: 20px;
+  }
+  .order__column::before {
+    display: none;
+  }
+  .order__form {
+    padding: 30px 20px;
+  }
+  .call__phone {
+    font-size: 32px;
+  }
+}
