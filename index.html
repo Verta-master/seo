@@ -114,7 +114,7 @@
         <a href="tel:+74993946804" class="contacts__link contacts__link--phone"><span>+7 (499) 394-68-04</span></a>
         <a href="mailto:info@seo-ecommerce.ru" class="contacts__link contacts__link--mail"><span>info@seo-ecommerce.ru</span></a>
         <div class="contacts__link contacts__link--address">
-          <a href="#" class="contacts__city"><span>Мoсква</span></a>
+          <a data-fancybox data-src="#city2" href="javascript:;" class="contacts__city"><span>Мoсква</span></a>
           <address>Добролюбова&nbsp;21А, 2&nbsp;подъезд,<br>-1&nbsp;этаж, офис&nbsp;6</address>
         </div>
         <div class="contacts__link contacts__link--time">Пн.-Пт.: 9:00 - 18:00<br>Сб., Вс.: выходной</div>
@@ -140,27 +140,29 @@
   </nav>
   
   <main>
+    <button type="button" class="menu-btn"></button>
+    
     <section class="promo" id="top">
       <div class="owl-carousel owl-theme promo__slider">
         <div class="item promo__slide" style="background-image:url(img/images/bg-main.jpg);">
           <div class="promo__wrap">
             <p class="promo__title">Узнайте сколько стоит раскрутка интернет-магазина</p>
             <div class="promo__subtitle">Оптимизировали и продвинули в ТОП более 50 интернет-магазинов</div>
-            <a href="#" class="btn promo__btn">Оставить заявку</a>
+            <a data-fancybox data-src="#call" href="javascript:;" class="btn promo__btn">Оставить заявку</a>
           </div>
         </div>
         <div class="item promo__slide" style="background-image:url(img/images/slide-2.jpg);">
           <div class="promo__wrap">
             <p class="promo__title">Узнайте сколько стоит раскрутка интернет-магазина</p>
             <div class="promo__subtitle">Оптимизировали и продвинули в ТОП более 50 интернет-магазинов</div>
-            <a href="#" class="btn promo__btn">Оставить заявку</a>
+            <a data-fancybox data-src="#call" href="javascript:;" class="btn promo__btn">Оставить заявку</a>
           </div>
         </div>
         <div class="item promo__slide" style="background-image:url(img/images/slide-3.jpg);">
           <div class="promo__wrap">
             <p class="promo__title">Узнайте сколько стоит раскрутка интернет-магазина</p>
             <div class="promo__subtitle">Оптимизировали и продвинули в ТОП более 50 интернет-магазинов</div>
-            <a href="#" class="btn promo__btn">Оставить заявку</a>
+            <a data-fancybox data-src="#call" href="javascript:;" class="btn promo__btn">Оставить заявку</a>
           </div>
         </div>
       </div>
@@ -793,7 +795,7 @@
           </div>
           <div class="call__action">
             <a href="tel:+71234567890" class="call__phone">+7 123 456 78 90</a>
-            <a href="#" class="btn btn--light call__btn">Перезвоните мне</a>
+            <a data-fancybox data-src="#call" href="javascript:;" class="btn btn--light call__btn">Перезвоните мне</a>
           </div>
         </div>
       </div>
@@ -815,6 +817,132 @@
 	    <path d="M32,0C23.452,0,15.417,3.329,9.373,9.374C3.329,15.417,0,23.453,0,32s3.329,16.583,9.373,22.626	C15.417,60.671,23.452,64,32,64s16.583-3.329,22.626-9.374C60.671,48.583,64,40.547,64,32s-3.33-16.583-9.374-22.626	C48.583,3.329,40.548,0,32,0z M51.797,51.798C46.51,57.087,39.479,60,32,60c-7.479,0-14.51-2.913-19.799-8.202	C6.913,46.51,4,39.479,4,32s2.913-14.51,8.202-19.798C17.49,6.913,24.521,4,32,4c7.479,0,14.51,2.913,19.798,8.203	C57.087,17.491,60,24.521,60,32S57.087,46.509,51.797,51.798z"/>
     </svg>
   </a>
+  
+  <!-- Modal windows -->
+  <div style="display: none;" id="call" class="modal">
+    <p class="modal__title">Обратный звонок</p>
+    <form action="#" class="form">
+      <input type="text" class="form__input" placeholder="Ваше имя">
+      <input type="tel" class="form__input" placeholder="Ваш телефон">
+      <input type="checkbox" id="checkbox" class="form__checkbox">
+      <label for="checkbox" class="form__label">Я не робот</label>
+      <button type="submit" class="btn form__btn">Заказать</button>
+      <p class="form__comment">Отправляя форму, вы соглашаетесь на <a href="#">обработку персональных данных</a></p>
+    </form>
+  </div>
+  
+  <div style="display: none;" id="city" class="modal">
+    <p class="modal__title">Ваш регион - Москва?</p>
+    <div class="modal__btns">
+      <a href="#" class="btn modal__btn">Да</a>
+      <a href="#" class="btn btn--light modal__btn">Другой регион</a>
+    </div>
+  </div>
+  
+  <div style="display: none;" id="city2" class="modal modal--city">
+    <div class="city">
+      <p class="city__title"><span>Ваш город: Москва</span></p>
+      <div class="city__search">
+        <p class="title-2">Выберите город:</p>
+        <div class="search">
+          <form action="#" class="search__form">
+            <input type="text" class="search__input" placeholder="Например, Зеленоград...">
+            <button type="submit" class="search__btn" title="Поиск">
+              <svg x="0px" y="0px" viewBox="0 0 487.95 487.95" style="enable-background:new 0 0 487.95 487.95;" xml:space="preserve">
+                <use href="#icon-search"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+      <div class="city__popular">
+        <a href="#" class="city__option city__option--active">Популярные города</a>
+        <a href="#" class="city__option">Россия</a>
+        <a href="#" class="city__option">Казахстан</a>
+        <a href="#" class="city__option">Беларусь</a>
+      </div>
+      <ul class="city__list">
+        <li class="city__item"><a href="#">Абакан</a></li>
+        <li class="city__item"><a href="#">Анадырь</a></li>
+        <li class="city__item"><a href="#">Архангельск</a></li>
+        <li class="city__item"><a href="#">Астрахань</a></li>
+        <li class="city__item"><a href="#">Барнаул</a></li>
+        <li class="city__item"><a href="#">Белгород</a></li>
+        <li class="city__item"><a href="#">Биробиджан</a></li>
+        <li class="city__item"><a href="#">Благовещенск</a></li>
+        <li class="city__item"><a href="#">Брянск</a></li>
+        <li class="city__item"><a href="#">Великий Новгород</a></li>
+        <li class="city__item"><a href="#">Владивосток</a></li>
+        <li class="city__item"><a href="#">Владикавказ</a></li>
+        <li class="city__item"><a href="#">Владимир</a></li>
+        <li class="city__item"><a href="#">Волгоград</a></li>
+        <li class="city__item"><a href="#">Вологда</a></li>
+        <li class="city__item"><a href="#">Воронеж</a></li>
+        <li class="city__item"><a href="#">Горно-Алтайск</a></li>
+        <li class="city__item"><a href="#">Грозный</a></li>
+        <li class="city__item"><a href="#">Екатеринбург</a></li>
+        <li class="city__item"><a href="#">Иваново</a></li>
+        <li class="city__item"><a href="#">Ижевск</a></li>
+        <li class="city__item"><a href="#">Иркутск</a></li>
+        <li class="city__item"><a href="#">Йошкар-Ола</a></li>
+        <li class="city__item"><a href="#">Казань</a></li>
+        <li class="city__item"><a href="#">Калуга</a></li>
+        <li class="city__item"><a href="#">Кемерово</a></li>
+        <li class="city__item"><a href="#">Киров</a></li>
+        <li class="city__item"><a href="#">Кострома</a></li>
+        <li class="city__item"><a href="#">Краснодар</a></li>
+        <li class="city__item"><a href="#">Красноярск</a></li>
+        <li class="city__item"><a href="#">Курган</a></li>
+        <li class="city__item"><a href="#">Курск</a></li>
+        <li class="city__item"><a href="#">Кызыл</a></li>
+        <li class="city__item"><a href="#">Липецк</a></li>
+        <li class="city__item"><a href="#">Магадан</a></li>
+        <li class="city__item"><a href="#">Майкоп</a></li>
+        <li class="city__item"><a href="#">Махачкала</a></li>
+        <li class="city__item"><a href="#">Мурманск</a></li>
+        <li class="city__item"><a href="#">Назрань</a></li>
+        <li class="city__item"><a href="#">Нальчик</a></li>
+        <li class="city__item"><a href="#">Нарьян-Мар</a></li>
+        <li class="city__item"><a href="#">Нижний Новгород</a></li>
+        <li class="city__item"><a href="#">Новосибирск</a></li>
+        <li class="city__item"><a href="#">Омск</a></li>
+        <li class="city__item"><a href="#">Орел</a></li>
+        <li class="city__item"><a href="#">Оренбург</a></li>
+        <li class="city__item"><a href="#">Пенза</a></li>
+        <li class="city__item"><a href="#">Пермь</a></li>
+        <li class="city__item"><a href="#">Петрозаводск</a></li>
+        <li class="city__item"><a href="#">Псков</a></li>
+        <li class="city__item"><a href="#">Ростов-на-Дону</a></li>
+        <li class="city__item"><a href="#">Рязань</a></li>
+        <li class="city__item"><a href="#">Салехард</a></li>
+        <li class="city__item"><a href="#">Самара</a></li>
+        <li class="city__item"><a href="#">Саранск</a></li>
+        <li class="city__item"><a href="#">Саратов</a></li>
+        <li class="city__item"><a href="#">Севастополь</a></li>
+        <li class="city__item"><a href="#">Симферополь</a></li>
+        <li class="city__item"><a href="#">Смоленск</a></li>
+        <li class="city__item"><a href="#">Ставрополь</a></li>
+        <li class="city__item"><a href="#">Сыктывкар</a></li>
+        <li class="city__item"><a href="#">Тамбов</a></li>
+        <li class="city__item"><a href="#">Тверь</a></li>
+        <li class="city__item"><a href="#">Томск</a></li>
+        <li class="city__item"><a href="#">Тула</a></li>
+        <li class="city__item"><a href="#">Тюмень</a></li>
+        <li class="city__item"><a href="#">Улан-Удэ</a></li>
+        <li class="city__item"><a href="#">Ульяновск</a></li>
+        <li class="city__item"><a href="#">Уфа</a></li>
+        <li class="city__item"><a href="#">Хабаровск</a></li>
+        <li class="city__item"><a href="#">Ханты-Мансийск</a></li>
+        <li class="city__item"><a href="#">Челябинск</a></li>
+        <li class="city__item"><a href="#">Черкесск</a></li>
+        <li class="city__item"><a href="#">Чита</a></li>
+        <li class="city__item"><a href="#">Элиста</a></li>
+        <li class="city__item"><a href="#">Южно-Сахалинск</a></li>
+        <li class="city__item"><a href="#">Якутск</a></li>
+        <li class="city__item"><a href="#">Ярославль</a></li>
+      </ul>
+    </div>
+  </div>
   
   <script src="js/jquery-3.2.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.js"></script>
