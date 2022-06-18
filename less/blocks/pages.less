@@ -1,0 +1,35 @@
+.pages {
+  display: flex;
+  align-items: center;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+.pages__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+  line-height: 1;
+  text-decoration: none;
+  border: 1px solid rgba(0,0,0,0.2);
+  .transition();
+  
+  &:hover,
+  &:active {
+    color: #fff;
+    background-color: @violet;
+    .transition();
+  }
+  &--active {
+    height: 60px;
+    color: #fff;
+    background-color: @violet;
+    border-color: @violet;
+    .transition();
+  }
+}
+span.pages__link {
+  pointer-events: none;
+}
