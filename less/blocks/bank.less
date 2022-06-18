@@ -1,0 +1,47 @@
+.bank__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.bank__data {
+  width: 57%;
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    
+    td {
+      height: 40px;
+      
+      &:first-child {
+        width: 220px;
+      }
+    }
+  }
+}
+.bank__block {
+  margin-bottom: 50px;
+  
+  .title-2 {
+    margin-bottom: 26px;
+  }
+}
+.download {
+  display: block;
+  position: relative;
+  padding-left: 30px;
+  color: @violet;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background-image: url(../img/icons/double-arrow.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    transform: rotate(90deg);
+  }
+}

@@ -1,3 +1,45 @@
 .team {
+  .title {
+    margin-bottom: 24px;
+  }
+}
+.team__wrap {
+  position: relative;
+}
+.team__slide {
+  text-align: center;
+}
+.team__img {
+  height: 440px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
   
+  img {
+    display: block;
+    flex: 0 0 auto;
+//    width: auto !important;
+  }
+}
+.team__name {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 500;
+}
+.team__position {
+  margin: 0;
+}
+.team__slider {
+  .owl-nav button.owl-next,
+  .owl-nav button.owl-prev {
+    position: absolute;
+    top: -60px;
+    right: 0;
+    left: auto;
+  }
+  .owl-nav button.owl-prev {
+    right: 60px;
+  }
 }
