@@ -4081,6 +4081,7 @@ span.pages__link {
   .company {
     font-size: 18px;
   }
+  .sale__img,
   .benefits__item,
   .company__img {
     width: 100%;
@@ -4109,6 +4110,9 @@ span.pages__link {
   }
   .connect .subtitle {
     width: 115px;
+  }
+  .team__img {
+    height: 300px;
   }
 }
 @media (max-width: 358px) {
