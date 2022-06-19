@@ -39,6 +39,27 @@
   .reason__item .title-2 {
     font-size: 20px;
   }
+  .connect__block .contacts__link {
+    font-size: 18px;
+  }
+  .sale__title {
+    width: 300px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .sale__list {
+    width: ~"calc(100% - 300px)";
+  }
+  .diploma__slider .owl-nav button.owl-next,
+  .portfolio__slider .owl-nav button.owl-next {
+    right: 10px;
+    left: auto;
+  }
+  .diploma__slider .owl-nav button.owl-prev, 
+  .portfolio__slider .owl-nav button.owl-prev {
+    right: 60px;
+    left: auto;
+  }
 }
 @media (max-width: 1380px) {
   .promo__btn,
@@ -184,6 +205,10 @@
   .nav__link:hover {
     font-size: 20px;
   }
+  .diploma__wrap, 
+  .portfolio__wrap {
+    margin-left: 290px;
+  }
 }
 @media (max-width: 1200px) {
   .promo,
@@ -244,6 +269,24 @@
   }
   .review__slider {
     margin-left: 100px;
+  }
+  .diploma__wrap,
+  .portfolio__wrap {
+    margin-left: 0;
+  }
+  .diploma__slider .owl-stage-outer,
+  .portfolio__slider .owl-stage-outer {
+    padding-left: 10px;
+  }
+  .sale__icon {
+    width: 100px;
+    margin-bottom: 15px;
+  }
+  .sale__title .title {
+    margin-bottom: 25px;
+  }
+  .sale__wrap {
+    align-items: flex-start;
   }
 }
 @media (max-width: 1000px) {
@@ -414,6 +457,7 @@
     min-height: 300px;
     padding-left: 0;
   }
+  .sale__wrap,
   .bank__wrapper,
   .company__wrap,
   .customer__wrap {
@@ -445,6 +489,7 @@
     margin-right: auto;
     margin-bottom: 30px;
   }
+  .sale__list,
   .bank__data,
   .company__address {
     width: 100%;
@@ -457,8 +502,32 @@
     width: 45%;
     margin-bottom: 20px;
   }
+  .sale__title,
   .bank__data {
     margin-bottom: 30px;
+  }
+  .steps__item {
+    font-size: 16px;
+  }
+  .sale__title {
+    width: 100%;
+    padding: 0;
+  }
+  .sale__icon {
+    display: none;
+  }
+  .sale__title .subtitle {
+    width: 105px;
+  }
+  .sale {
+    margin-bottom: 60px;
+  }
+  .connect__wrap {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .connect__block {
+    width: 40%;
   }
 }
 @media (max-width: 766px) {
@@ -591,6 +660,49 @@
   .team__position {
     font-size: 14px;
   }
+  .sale__block,
+  .steps__list,
+  .fact__list {
+    display: block;
+  }
+  .steps__item,
+  .fact__item {
+    width: 100%;
+    
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+  .fact .subtitle,
+  .steps .subtitle {
+    width: 90px;
+  }
+  .fact__number {
+    font-size: 36px;
+  }
+  .steps__list::before {
+    display: none;
+  }
+  .steps__item {
+    font-size: 18px;
+  }
+  .sale__info {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .sale__title .subtitle {
+    margin: 0;
+  }
+  .sale__link,
+  .sale__title .title {
+    text-align: left;
+  }
+  .connect__block {
+    width: 100%;
+  }
+  .connect__block:nth-child(2) {
+    max-width: 100%;
+  }
 }
 @media (max-width: 480px) {
   .promo__slide {
@@ -708,6 +820,10 @@
     padding-right: 20px;
     padding-bottom: 20px;
   }
+  .diploma__slider .owl-nav button.owl-prev,
+  .portfolio__slider .owl-nav button.owl-prev,
+  .diploma__slider .owl-nav button.owl-next,
+  .portfolio__slider .owl-nav button.owl-next,
   .team__slider .owl-nav button.owl-next,
   .team__slider .owl-nav button.owl-prev,
   .review__slider .owl-nav button.owl-next,
@@ -803,6 +919,29 @@
   .bank,
   .benefits {
     margin-bottom: 50px;
+  }
+  .portfolio__slide {
+    width: 280px;
+  }
+  .portfolio__img {
+    height: 140px;
+  }
+  .sale__info,
+  .portfolio__text {
+    font-size: 16px;
+  }
+  .sale__info,
+  .portfolio__text {
+    .title-2 {
+      font-size: 20px;
+      line-height: 1.2;
+    }
+  }
+  .sale__block {
+    padding: 0 10px;
+  }
+  .connect .subtitle {
+    width: 115px;
   }
 }
 @media (max-width: 358px) {
