@@ -252,7 +252,7 @@
       </div>
     </section>
     
-    <section class="benefits" id="support">
+    <section class="benefits benefits--support" id="support">
       <div class="wrapper">
         <p class="subtitle">Услуга</p>
         <p class="title">Техническая поддержка и доработка сайта</p>
@@ -405,9 +405,9 @@
             </tr>
             <tr>
               <td>Устранение ошибок в работе сайта</td>
-              <td>в течение 24 часов</td>
-              <td>в течение 12 часов</td>
-              <td>в течение 6 часов</td>
+              <td>в течение 24&nbsp;часов</td>
+              <td>в течение 12&nbsp;часов</td>
+              <td>в течение 6&nbsp;часов</td>
             </tr>
             <tr>
               <td>Юзабилити и СЕО аудит сайта</td>
@@ -442,7 +442,7 @@
       <div class="wrapper">
         <p class="subtitle">Стоимость</p>
         <p class="title">От чего зависит цена<br>на техническую поддержку сайта?</p>
-        <div class="text__wrap">
+        <div class="text__wrap list-arrow">
           <p>Серьезный бизнес требует капиталовложений, ведь цена определяет качество. Стоимость техподдержки сайта зависит от многих факторов, в частности от:</p>
           <ul>
             <li>Времени, в течении которого обеспечивается работоспособность сайта;</li>
@@ -698,6 +698,12 @@
     $('.nav--support').niceScroll({
       cursorcolor: '#7a029f',
     });
+    
+    if (window.innerWidth < 1000) {
+      $('.price__wrap').niceScroll({
+        cursorcolor: '#7a029f',
+      });
+    }
   </script>
 </body>
 </html>

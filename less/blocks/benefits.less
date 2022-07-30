@@ -5,6 +5,16 @@
     max-width: 950px;
     margin-left: auto;
     margin-right: auto;
+    font-size: 30px;
+  }
+  &--support {
+    .title {
+      margin-bottom: 30px;
+    }
+    .benefits__text {
+      font-size: 18px;
+      line-height: 1.5;
+    }
   }
 }
 .benefits__list {
@@ -17,14 +27,18 @@
     flex-wrap: wrap;
     
     .benefits__item {
-      width: 22%;
+      width: 24%;
       margin-top: 40px;
+      font-size: 24px;
       
       &:nth-child(3),
       &:nth-child(4) {
         .benefits__icon img {
           transform: none;
         }
+      }
+      .benefits__icon {
+        height: 100px;
       }
     }
   }
@@ -44,6 +58,9 @@
       }
       b {
         display: block;
+      }
+      .benefits__icon {
+        height: 100px;
       }
     }
   }

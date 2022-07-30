@@ -209,6 +209,30 @@
   .portfolio__wrap {
     margin-left: 290px;
   }
+  h1 {
+    font-size: 48px;
+  }
+  .price__table,
+  .benefits__list--three .benefits__item,
+  .benefits__list--support .benefits__item {
+    font-size: 18px;
+  }
+  .support__info p {
+    font-size: 40px;
+  }
+  .support__call p {
+    font-size: 24px;
+  }
+  .support__info {
+    padding-right: 40px;
+    padding-left: 50px;
+  }
+  .info {
+    background-position: left 200px center;
+  }
+  .task__list {
+    padding-left: 20px;
+  }
 }
 @media (max-width: 1200px) {
   .promo,
@@ -287,6 +311,9 @@
   }
   .sale__wrap {
     align-items: flex-start;
+  }
+  .info {
+    background-position: left center;
   }
 }
 @media (max-width: 1000px) {
@@ -457,6 +484,7 @@
     min-height: 300px;
     padding-left: 0;
   }
+  .support__wrap,
   .sale__wrap,
   .bank__wrapper,
   .company__wrap,
@@ -489,6 +517,7 @@
     margin-right: auto;
     margin-bottom: 30px;
   }
+  .support__info,
   .sale__list,
   .bank__data,
   .company__address {
@@ -528,6 +557,39 @@
   }
   .connect__block {
     width: 40%;
+  }
+  .price__wrap {
+    width: 100%;
+    overflow-x: scroll;
+    position: relative;
+  }
+  .price__table {
+    width: 990px;
+  }
+  .task__list {
+    padding-left: 0;
+  }
+  .info {
+    min-height: 400px;
+  }
+  .support__call {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+  }
+  .support__info {
+    text-align: center;
+    padding: 0;
+    margin-bottom: 50px;
+  }
+  .benefits__list--support .benefits__item {
+    width: 32%;
+  }
+  .benefits .title-2 {
+    font-size: 24px;
+  }
+  .benefits__text {
+    font-size: 18px;
   }
 }
 @media (max-width: 766px) {
@@ -593,6 +655,7 @@
     width: 320px;
     max-width: 100%;
   }
+  .top__btns,
   .service__list,
   .clients__item {
     display: block;
@@ -660,6 +723,7 @@
   .team__position {
     font-size: 14px;
   }
+  .tech__wrap,
   .sale__block,
   .steps__list,
   .fact__list {
@@ -697,11 +761,32 @@
   .sale__title .title {
     text-align: left;
   }
+  .tech__column,
   .connect__block {
     width: 100%;
   }
   .connect__block:nth-child(2) {
     max-width: 100%;
+  }
+  .top__link {
+    font-size: 18px;
+  }
+  .top__btn {
+    margin-bottom: 20px;
+  }
+  .task__list {
+    background-image: none;
+  }
+  .task__item:nth-child(2n) span {
+    left: 0;
+  }
+  .task__item {
+    padding-left: 124px;
+  }
+  .text__wrap ul {
+    padding-left: 0;
+    margin-top: 40px;
+    margin-bottom: 40px;
   }
 }
 @media (max-width: 480px) {
@@ -758,6 +843,9 @@
         background-image: url(../img/icons/question.svg);
       }
     }
+  }
+  .nav--support {
+    display: none;
   }
   .nav__list {
     justify-content: center;
@@ -946,6 +1034,40 @@
   }
   .team__img {
     height: 300px;
+  }
+  .top--support {
+    margin-bottom: 30px;
+  }
+  .benefits__list--three .benefits__item,
+  .benefits__list--support .benefits__item {
+    width: 49%;
+    margin-top: 0;
+    font-size: 16px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .benefits__list--support .benefits__item .benefits__icon,
+  .benefits__list--three .benefits__item .benefits__icon {
+    height: 64px;
+  }
+  .support__info p {
+    font-size: 36px;
+  }
+  .support {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .info {
+    padding: 30px 0;
+  }
+  .tech__title {
+    margin-top: 40px;
+  }
+  .text {
+    background-image: none;
+  }
+  .text__wrap {
+    font-size: 18px;
   }
 }
 @media (max-width: 358px) {
