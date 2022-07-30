@@ -7,6 +7,8 @@
   color: #fff;
   margin-bottom: 50px;
   padding-left: 105px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   background-image: url(../img/images/bg-clients.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -17,5 +19,43 @@
   }
   &--about {
     background-image: url(../img/images/bg-about.jpg);
+  }
+  &--support {
+    margin-bottom: 0;
+    background-image: url(../img/images/bg-tp.jpg);
+  }
+}
+.top__btns {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+}
+.top__btn {
+  margin-right: 40px;
+}
+.top__link {
+  position: relative;
+  padding-right: 35px;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 500;
+  .transition();
+  
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    width: 20px;
+    height: 20px;
+    background-image: url(../img/icons/next-white.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  &:hover,
+  &:active {
+    opacity: 0.7;
+    .transition();
   }
 }

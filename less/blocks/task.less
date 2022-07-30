@@ -1,0 +1,33 @@
+.task {
+  margin-bottom: 100px;
+  
+  .title-2 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 60px;
+  }
+}
+.task__list {
+  .reset();
+  list-style: none;
+  padding-left: 110px;
+}
+.task__item {
+  position: relative;
+  padding-left: 200px;
+  margin-bottom: 40px;
+  
+  span {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    font-size: 80px;
+    font-weight: 500;
+    line-height: 1;
+    color: @violet;
+  }
+  &:nth-child(2n) span {
+    left: 80px;
+  }
+}
