@@ -87,3 +87,29 @@
     }
   }
 }
+.link {
+  display: block;
+  
+  span {
+    position: relative;
+    color: @violet;
+    padding-right: 30px;
+    
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 0;
+      width: 16px;
+      height: 16px;
+      background-image: url(../img/icons/next.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+  &:hover,
+  &:active {
+    text-decoration: underline;
+  }
+}
