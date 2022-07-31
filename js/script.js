@@ -10,11 +10,32 @@ $('.menu__btn').click(function() {
     $(".menu__block").getNiceScroll().resize();
   });
 })
+//
+//$('.menu-btn').click(function() {
+//  $('.menu').toggleClass('menu--open');
+//  $(this).toggleClass('menu-btn--close');
+//})
 
-$('.menu-btn').click(function() {
-  $('.menu').toggleClass('menu--open');
-  $(this).toggleClass('menu-btn--close');
-})
+
+var menuBtn = $(".menu-btn"),
+    menu = $(".menu");
+
+menuBtn.on("click", function () {
+    if ($(this).hasClass("menu-btn--close")) {
+        $(this).removeClass("menu-btn--close");
+        menu.removeClass('menu--open');
+    } else {
+        $(this).addClass("menu-btn--close");
+        menu.addClass('menu--open');
+    }
+});
+
+$(document).click(function (e) {
+    if (!menuBtn.is(e.target) && !menu.is(e.target) && menu.has(e.target).length === 0) {
+        menu.removeClass('menu--open');
+        menuBtn.removeClass("menu-btn--close");
+    };
+});
 
 //Scroll to top
 $(window).scroll(function(){
