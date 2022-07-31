@@ -786,6 +786,11 @@
       $(this).hide();
       $('.studio__dropdown').slideDown();
     })
+    
+    $('.faq__title').click(function() {
+      $(this).toggleClass('faq__title--drop');
+      $(this).next().slideToggle();
+    })
   </script>
 </body>
 </html>

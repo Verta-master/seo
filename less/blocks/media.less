@@ -657,6 +657,13 @@
       height: auto;
     }
   }
+  .content__wrap ul {
+    padding-left: 0;
+    
+    li {
+      padding-right: 10px;
+    }
+  }
 }
 @media (max-width: 766px) {
   .promo__wrap {
@@ -810,6 +817,7 @@
   .fact__number {
     font-size: 36px;
   }
+  .process__img,
   .steps__list::before {
     display: none;
   }
@@ -827,6 +835,7 @@
   .sale__title .title {
     text-align: left;
   }
+  .process__text,
   .tech__column,
   .connect__block {
     width: 100%;
@@ -863,6 +872,13 @@
   }
   .support--site .support__info p {
     font-size: 36px;
+  }
+  .process__wrap {
+    display: block;
+  }
+  .content__wrap ul li {
+    width: 100%;
+    padding-right: 0;
   }
 }
 @media (max-width: 480px) {
@@ -1127,7 +1143,7 @@
     height: 64px;
   }
   .support__info p {
-    font-size: 36px;
+    font-size: 32px;
   }
   .support {
     padding-top: 40px;
@@ -1168,7 +1184,7 @@
   .pricelist__table td {
     border-bottom: 0;
     height: auto;
-    padding: 10px 0;
+    padding: 10px;
     
     &:first-child {
       text-align: center;
@@ -1184,6 +1200,13 @@
   }
   .fact__number, .support--site .support__info p {
     font-size: 30px;
+  }
+  .approach .subtitle {
+    width: auto;
+    margin-left: 0;
+  }
+  .approach .title {
+    text-align: left;
   }
 }
 @media (max-width: 358px) {
