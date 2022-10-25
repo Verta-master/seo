@@ -3,18 +3,14 @@ $('.menu__block').niceScroll({
   cursorcolor: '#7a029f',
 });
 
-$('.menu__btn').click(function() {
+$('.menu__sublink').click(function() {
+  event.preventDefault();
   $(this).next().slideToggle();
-  $(this).toggleClass('menu__btn--open');
+  $(this).toggleClass('menu__sublink--open');
   $(".menu__block").scroll(function(){
     $(".menu__block").getNiceScroll().resize();
   });
 })
-//
-//$('.menu-btn').click(function() {
-//  $('.menu').toggleClass('menu--open');
-//  $(this).toggleClass('menu-btn--close');
-//})
 
 
 var menuBtn = $(".menu-btn"),
