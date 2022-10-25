@@ -1,3 +1,8 @@
+@media (max-width: 1700px) {
+  .faq--market .faq__img {
+    display: none;
+  }
+}
 @media(max-width: 1200px) {
   .page404 {
     padding-top: 50px;
@@ -20,9 +25,63 @@
   .page404 {
     padding-bottom: 50px;
   }
+  .market__item {
+    padding: 0 20px;
+  }
+  .bargain__list {
+    flex-wrap: wrap;
+  }
+  .bargain__item {
+    padding: 0;
+    width: 45%;
+    margin-bottom: 20px;
+  }
+  .stage__item::before,
+  .stage__item::after {
+    display: none;
+  }
+  .stage__item:nth-child(4),
+  .stage__item:nth-child(3),
+  .stage__item:nth-child(2) {
+    padding-left: 0;
+  }
+  .process--market .process__item {
+    font-size: 20px;
+  }
+}
+@media(max-width: 700px) {
+  .market__item {
+    width: 48%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .market__list {
+    justify-content: space-around;
+  }
+  .bargain__title {
+    font-size: 20px;
+    line-height: 1.3;
+  }
 }
 @media(max-width: 480px) {
   .page404__title {
     font-size: 26px;
+  }
+  .market__item {
+    height: 75px;
+  }
+  .stage__text,
+  .stage__title,
+  .bargain__item {
+    width: 100%;
+  }
+  .stage__item {
+    display: block;
+  }
+  .stage__title {
+    margin-bottom: 20px !important;
+  }
+  .stage__text {
+    padding-left: 0;
   }
 }
