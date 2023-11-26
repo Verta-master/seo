@@ -226,7 +226,7 @@ gulp.task('svg-sprite', gulp.series('svg-sprite:del', 'svg-sprite:copy', 'svg:co
 gulp.task('deploy', function(done) {
   return gulp.src('build/**/*')
     .pipe(ghPages());
-    done();
+//    done();
 });
 
 // LIVE SERVER
